@@ -1,16 +1,15 @@
 /* InterTight-Medium */
 @font-face {
-    font-display: swap;
-    font-family: 'Inter Tight';
-    font-style: normal;
+    font-family: 'InterTight';
+    src: url('/src/fonts/InterTight-Medium.ttf') format('truetype');
     font-weight: 500;
-    src: url('/src/fonts/InterTight-Medium.ttf');
+    font-style: normal;
 }
+
 /* InterTight-SemiBold */
 @font-face {
-    font-display: swap;
-    font-family: 'Inter Tight';
-    font-style: normal;
+    font-family: 'InterTight';
+    src: url('/src/fonts/InterTight-SemiBold.ttf') format('truetype');
     font-weight: 600;
-    src: url('/src/fonts/InterTight-SemiBold.ttf');
+    font-style: normal;
 }
