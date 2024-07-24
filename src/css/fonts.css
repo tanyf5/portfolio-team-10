@@ -1,7 +1,7 @@
 /* InterTight-Medium */
 @font-face {
     font-family: 'InterTight';
-    src: url('/src/fonts/InterTight-Medium.ttf') format('truetype');
+    src: url('/fonts/InterTight-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -9,7 +9,7 @@
 /* InterTight-SemiBold */
 @font-face {
     font-family: 'InterTight';
-    src: url('/src/fonts/InterTight-SemiBold.ttf') format('truetype');
+    src: url('/fonts/InterTight-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
