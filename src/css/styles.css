@@ -1,25 +1,68 @@
 /**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
+  imports
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./common.css');
+@import url('./fonts.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./aboutMe.css');
+@import url('./benefits.css');
+@import url('./projects.css');
+@import url('./FAQ.css');
+@import url('./covers.css');
+@import url('./reviews.css');
+@import url('./footer.css');
+
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter Tight, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: #FAFAFA;
+  background-color: #242527;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/*<----------768px--------->*/
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+/*<----------1440px--------->*/
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
 }
