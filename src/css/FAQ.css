@@ -1,7 +1,6 @@
 .section-faq {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: #1c1d20;
 }
 
 .faq {
@@ -53,7 +52,7 @@
 }
 
 /* .faq__item.is-active {
-  background-color: #2951c9;
+  background-color: #24252879;
 } */
 
 .faq .faq__list .faq__item .faq__item-wrap-title {
@@ -126,8 +125,12 @@
     padding-left: 32px;
   }
 
-  .faq__list .faq__item-title {
-    max-width: 488px;
+  .faq__item .faq__item-title {
+    max-width: 485px;
+  }
+
+  .faq__item .faq__item-title:nth-child(1) {
+    max-width: 574px;
   }
 }
 
