@@ -19,9 +19,10 @@
   <div class="about-accordion">
     <div class="ac">
       <h2 class="ac-header">
-        <button type="button" class="ac-trigger">About me 
-            <!-- <svg class="" width="18px" height="18px">
-            <use href="../img/icons.svg#icon-execution"></use> </svg> -->
+        <button type="button" class="ac-trigger">
+          About me
+          <!-- <svg class="about-svg-down" width="18px" height="18px">
+            <use href="../img/icons.svg#icon-arrow-down"></use> </svg> -->
         </button>
       </h2>
       <div class="ac-panel">
@@ -60,6 +61,7 @@
       </ul>
     </div>
 
+   
     <div class="ac">
       <h2 class="ac-header">
         <button type="button" class="ac-trigger">Education</button>
@@ -78,6 +80,21 @@
       </ul>
     </div>
   </div>
-
-  <div class="about-slider"></div>
+  <div class="swiper my-swiper about-swipe">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">HTML/CSS</li>
+      <li class="swiper-slide">JavaScript</li>
+      <li class="swiper-slide">React</li>
+      <li class="swiper-slide">Node.js</li>
+      <li class="swiper-slide">React Native</li>
+      <li class="swiper-slide">Soft skills</li>
+    </ul>
+    <div class="swiper-button-next">
+      <button type="button" class="about-btn-next">
+        <svg class="about-svg-nav" width="28px" height="28px">
+          <use href="../img/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
