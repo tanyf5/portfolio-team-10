@@ -96,6 +96,9 @@
   width: 52px;
   height: 52px;
   background-color: #1c1d20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-set__right {
@@ -105,4 +108,17 @@
   width: 52px;
   height: 52px;
   background-color: #1c1d20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-set__left-icon {
+  fill: white;
+  stroke: white;
+}
+
+.btn-set__right-icon {
+  fill: white;
+  stroke: white;
 }
