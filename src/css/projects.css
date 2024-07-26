@@ -56,6 +56,9 @@
   margin-bottom: 32px;
 }
 .set-top__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -121,4 +124,70 @@
 .btn-set__right-icon {
   fill: white;
   stroke: white;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .projects {
+    padding-block: 48px;
+  }
+
+  .projects__title {
+    margin-bottom: 32px;
+  }
+
+  .set {
+    margin-bottom: 64px;
+  }
+  /* set-bottom */
+
+  .set-top {
+    background: #fafafa;
+    padding: 64px;
+  }
+
+  .set-top__list {
+    margin-bottom: 164px;
+  }
+
+  .set-top__item {
+    padding: 18px;
+  }
+
+  .set-top__title {
+    max-width: 494px;
+    font-size: 44px;
+  }
+  .set-top__link {
+    min-width: 177px;
+    height: 55px;
+  }
+
+  /* set-bottom */
+
+  .set-bottom {
+    padding: 120px 45px;
+  }
+
+  /* btn-set */
+
+  .btn-set {
+    gap: 20px;
+  }
+
+  .btn-set__left {
+    padding: 18px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .btn-set__right {
+    padding: 18px;
+    width: 64px;
+    height: 64px;
+  }
 }
