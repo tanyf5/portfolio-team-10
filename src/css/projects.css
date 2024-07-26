@@ -1,0 +1,275 @@
+.projects {
+  padding-block: 32px;
+}
+
+.projects__title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+.set {
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+/* set-bottom */
+
+.set-top {
+  background: #fafafa;
+  padding: 32px;
+}
+
+.set-top__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 96px;
+}
+
+.set-top__item {
+  display: flex;
+  align-items: center;
+  font-family: 'Inter Tight', sans-serif;
+
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #1c1d20;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+  padding: 13px 18px;
+}
+
+.set-top__title {
+  font-family: 'Inter Tight', sans-serif;
+  /* font-weight: 500; */
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  color: #1c1d20;
+  margin-bottom: 32px;
+}
+.set-top__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+
+  border-radius: 60px;
+  padding: 13px 32px;
+  width: 141px;
+  height: 45px;
+  background-color: #ed3b44;
+}
+
+.set-top__link:hover,
+.set-top__link:active {
+  background-color: #e0373f;
+}
+/* set-bottom */
+
+.set-bottom {
+  background: #242527;
+  padding: 100px 16px;
+}
+
+/* btn-set */
+
+.btn-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-set__left {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  background-color: #1c1d20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-set__right {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  background-color: #1c1d20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-set__left-icon {
+  fill: white;
+  stroke: white;
+}
+
+.btn-set__right-icon {
+  fill: white;
+  stroke: white;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .projects {
+    padding-block: 48px;
+  }
+
+  .projects__title {
+    margin-bottom: 32px;
+  }
+
+  .set {
+    margin-bottom: 64px;
+  }
+  /* set-bottom */
+
+  .set-top {
+    background: #fafafa;
+    padding: 64px;
+  }
+
+  .set-top__list {
+    margin-bottom: 164px;
+  }
+
+  .set-top__item {
+    padding: 18px;
+  }
+
+  .set-top__title {
+    max-width: 494px;
+    font-size: 44px;
+  }
+  .set-top__link {
+    min-width: 177px;
+    height: 55px;
+  }
+
+  /* set-bottom */
+
+  .set-bottom {
+    padding: 120px 45px;
+  }
+
+  /* btn-set */
+
+  .btn-set {
+    gap: 20px;
+  }
+
+  .btn-set__left {
+    padding: 18px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .btn-set__right {
+    padding: 18px;
+    width: 64px;
+    height: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  .projects {
+    padding-block: 82px;
+  }
+
+  .set {
+    display: flex;
+    margin-bottom: 64px;
+  }
+  /* set-bottom */
+
+  .set-top {
+    background: #fafafa;
+    padding: 64px;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+  }
+
+  .set-top__list {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 223px;
+  }
+
+  .set-top__item {
+  }
+
+  .set-top__title {
+  }
+  .set-top__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+
+    border-radius: 60px;
+    /* padding: 18px 50px; */
+    width: 177px;
+    height: 55px;
+    background-color: #ed3b44;
+  }
+
+  .set-top__link:hover,
+  .set-top__link:active {
+    background-color: #e0373f;
+  }
+  /* set-bottom */
+
+  .set-bottom {
+    background: #242527;
+    padding: 100px 16px;
+
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  /* btn-set */
+
+  .btn-set {
+  }
+
+  .btn-set__left {
+  }
+
+  .btn-set__right {
+  }
+
+  .btn-set__left-icon {
+  }
+
+  .btn-set__right-icon {
+  }
+}
