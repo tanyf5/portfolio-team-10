@@ -1,27 +1,21 @@
 .hero {
-  margin: 0;
-  width: 375px;
-  height: auto;
-}
-
-.hero-wrap {
-  min-width: 320px;
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 0 16px 32px 16px;
   height: auto;
   background: url('../img/header-hero/background-img.webp'), rgb(28, 29, 32);
-  background-size: 75% 100%, 25% 100%;
+  background-size: 80% 100%, 20% 100%;
   background-repeat: no-repeat;
   background-position: left, right;
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
+
+.hero-wrap {}
 
 
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-  .hero-wrap {
+  .hero {
     background-image: url('../img/header-hero/background-img-2x.webp');
   }
 }
@@ -29,7 +23,7 @@
 .hero-title {
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 50px;
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -54,7 +48,8 @@
   height: auto;
   cursor: pointer;
   margin-top: 212px;
-  margin-bottom: 32px;
+  width: 342px;
+
 }
 
 .hero-list-item {
@@ -68,7 +63,7 @@
 }
 
 .hero-list-email {
-  width: 176px;
+  min-width: 176px;
 }
 
 .hero-link {
@@ -85,17 +80,12 @@
 
 @media screen and (min-width:768px) {
   .hero {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 768px;
+    padding: 0 32px 32px 32px;
+    background-size: 75% 100%, 25% 100%;
   }
 
-  .hero-wrap {
-    width: 768px;
-    height: auto;
-
-
-  }
+  .hero-wrap {}
 
   .hero-title {
     font-size: 90px;
@@ -107,7 +97,9 @@
   .hero-list {
     gap: 8px;
     margin-top: 187px;
-    margin-bottom: 32px;
+    margin-left: 263px;
+    width: 473px;
+
   }
 
   .hero-list-item {
@@ -121,7 +113,7 @@
 
   .hero-list-email {
     padding: 18px 24px;
-
+    min-width: 223px;
   }
 
 }
