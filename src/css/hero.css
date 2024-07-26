@@ -85,7 +85,6 @@
     background-size: 75% 100%, 25% 100%;
   }
 
-  .hero-wrap {}
 
   .hero-title {
     font-size: 90px;
@@ -120,26 +119,20 @@
 
 @media screen and (min-width:1440px) {
   .hero {
-    width: 1440px;
-  }
-
-  .hero-wrap {
-    width: 1440px;
-
+    max-width: 1440px;
+    background-size: 50% 100%, 50% 100%;
   }
 
   .hero-title {
-    font-size: 90px;
-    margin: 0 auto;
+    margin-left: 146px;
     margin-top: 300px;
-
     width: 1083px;
     height: auto;
   }
 
   .hero-list {
 
-    margin-left: 1000px;
+    margin-left: 935px;
     margin-top: 243px;
   }
 
