@@ -1,32 +1,35 @@
-const linkList = document.querySelector('.hero-list')
+const linkList = document.querySelector('.hero-list');
 
-const instagram = 'https://www.instagram.com/goitclub/';
-const facebook = 'https://www.facebook.com/goITclub/';
-const youtube = 'https://www.youtube.com/c/GoIT';
-const github = 'https://github.com/tanyf5/portfolio-team-10';
+const socialMediaLinks = [
+  { text: 'IG', link: 'https://www.instagram.com/goitclub/' },
+  { text: 'YT', link: 'https://www.youtube.com/c/GoIT' },
+  { text: 'FB', link: 'https://www.facebook.com/goITclub/' },
+  { text: 'GH', link: 'https://github.com/tanyf5/portfolio-team-10' },
+  { text: 'lloydjefferson@gmail.com', link: './index.html', class: 'hero-list-email' }
 
-function createMArkup(arr) {
+];
+
+function createMarkup(arr) {
   const markup = arr
-    .map(`
-          <li class="hero-list-item">
-          <a href="${instagram}" class="hero-link">IG</a>
-        </li>
-
-        <li class="hero-list-item">
-          <a href="${facebook}" class="hero-link">YT</a>
-        </li>
-
-        <li class="hero-list-item">
-          <a href="${youtube}" class="hero-link">FB</a>
-        </li>
-
-        <li class="hero-list-item">
-          <a href="${github}" class="hero-link">GH</a>
-        </li>
-        <li class="hero-list-item hero-list-email">
-          <a href="" class="hero-email">lloydjefferson@gmail.com</a>
-        </li>
-`).join()
+    .map(item => `
+      <li class="hero-list-item ${item.class}">
+        <a href="${item.link}" class="hero-link " target="_blank">${item.text}</a>
+      </li>
+    `)
+    .join('');
 
   linkList.insertAdjacentHTML('beforeend', markup);
 }
+
+createMarkup(socialMediaLinks);
+
+
+const linkItems = document.querySelectorAll('.hero-list-item');
+
+linkItems.forEach(item => {
+  item.addEventListener('click', function (event) {
+    event.preventDefault();
+    const link = this.querySelector('.hero-link').getAttribute('href');
+    window.open(link, '_blank');
+  });
+});
