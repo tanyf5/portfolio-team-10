@@ -5,7 +5,7 @@ const socialMediaLinks = [
   { text: 'YT', link: 'https://www.youtube.com/c/GoIT' },
   { text: 'FB', link: 'https://www.facebook.com/goITclub/' },
   { text: 'GH', link: 'https://github.com/tanyf5/portfolio-team-10' },
-  { text: 'lloydjefferson@gmail.com', link: './index.html', class: 'hero-list-email' }
+  { text: 'lloydjefferson@gmail.com', link: 'mailto:lloydjefferson@gmail.com', class: 'hero-list-email' }
 
 ];
 
