@@ -168,6 +168,10 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.21;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-slide-active {
@@ -235,9 +239,14 @@
   /*-----------------Slider------------*/
 
   /*div*/
-  .about-swipe.swiper {
+  .about-swipe.swiper.my-swiper {
+    display: flex;
+    flex-wrap: nowrap;
+
     width: 704px;
     height: 200px;
+
+    margin-top: 32px;
   }
 
   /*ul*/
@@ -351,9 +360,15 @@
   /*-----------------Slider------------*/
 
   /*div*/
-  .about-swipe.swiper {
-    width: 1312px;
+
+  .about-swipe.swiper.my-swiper {
+    display: flex;
+    flex-wrap: nowrap;
+
+    width: 1200px;
     height: 200px;
+
+    margin-top: 32px;
   }
 
   /*ul*/
