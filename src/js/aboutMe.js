@@ -5,6 +5,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 
+import spriteSvgWrap from '../img/icons.svg';
+
 const refs = {
   aboutAccordion: document.querySelector('.about-accordion'),
   swipSkill: document.querySelector('.my-swiper'),
