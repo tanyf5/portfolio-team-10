@@ -18,23 +18,19 @@ const refs = {
 //!==================== ACCORDION ======================
 new accordion(refs.aboutAccordion, {
   openOnInit: [0],
-  collapse: false,
   duration: 2000,
   showMultiple: true,
 });
 
 refs.aboutAccordion.addEventListener('click', e => {
-  const elem = e.target.closest('.ac');
-  const activeElem = elem.classList.contains('is-active');
+  const elem = e.target.closest('.ac-trigger');
+  const aboutMainDiv = elem.closest('.ac');
+  const linkSvgAcc = elem.querySelector('.about-icon use');
+  const activeElem = elem.closest('.is-active');
 
-  let linkSvgAcc = elem.querySelector('.about-icon use');
-
-  if (linkSvgAcc && elem) {
-    const svgHref = activeElem
-      ? './img/icons.svg#icon-arrow-up'
-      : './img/icons.svg#icon-arrow-down';
-
-    linkSvgAcc.setAttribute('href', `${svgHref}`);
+  if (aboutMainDiv && linkSvgAcc) {
+    const iconStan = activeElem ? '#icon-arrow-up' : '#icon-arrow-down';
+    linkSvgAcc.setAttribute('href', `${spriteSvgWrap}${iconStan}`);
   }
 });
 

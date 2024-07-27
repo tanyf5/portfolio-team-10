@@ -1,6 +1,6 @@
 .section-about.container {
-  padding-top: 32px;
-  padding-bottom: 45.5px;
+  padding-top: 64px;
+  padding-bottom: 32px;
 }
 
 .about-hidden-title {
@@ -11,13 +11,6 @@
   margin-bottom: 32px;
 }
 
-.about-img {
-  width: 343px;
-  height: 500px;
-  border-radius: 24px;
-  object-fit: cover;
-}
-
 .about-presentation-bcg {
   width: 343px;
   height: 500px;
@@ -26,6 +19,13 @@
 
   margin-bottom: 16px;
   padding-top: 32px;
+}
+
+.about-img {
+  width: 343px;
+  height: 500px;
+  border-radius: 24px;
+  object-fit: cover;
 }
 
 .about-text {
@@ -54,6 +54,11 @@
 
 .about-accordion {
   max-width: 343px;
+  margin-bottom: 64px;
+}
+
+.about-accordion > .ac {
+  margin-top: 0;
 }
 
 .ac > .ac-trigger > .ac-header,
@@ -73,7 +78,10 @@
 
   margin-bottom: 12px;
   padding: 0;
-  height: 36px;
+}
+
+.ac > .ac-trigger {
+  height: 40px;
 }
 
 .about-accordion > .ac > .ac-panel > .ac-text {
@@ -83,24 +91,23 @@
 
   color: rgba(250, 250, 250, 1);
   padding: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 12px;
 }
 
 .about-accordion > .ac > .ac-panel > .ac-text:last-child {
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
 .about-accordion > .ac > .ac-trigger {
   display: flex;
   justify-content: space-between;
-  padding-left: 0;
-}
-.about-ac-text-first {
-  margin-bottom: 32px;
+  padding: 0;
+  margin-top: 40px;
 }
 
-.ac-panel {
-  margin-bottom: 40px;
+.about-ac-text-first {
+  margin-bottom: 32px;
 }
 
 .about-accordion > .ac {
@@ -109,33 +116,39 @@
   border: none;
 }
 
+.about-accordion > .ac::after {
+  content: '';
+  background-color: rgba(250, 250, 250, 0.2);
+  height: 1px;
+  width: 100%;
+
+  bottom: -20px;
+  position: absolute;
+}
+
 .about-accordion > .ac > .ac-trigger::after {
   content: '';
 }
-/* .ac > .ac-trigger::after {
-  border-radius: 50%;
-  border: 1px rgba(250, 250, 250, 0.2) solid;
-  width: 36px;
-  height: 36px;
-} */
 
-.about-icon {
+.about-wrap-icon > .about-icon {
   stroke: #fafafa;
   fill: none;
-  width: 20px;
-  height: 20px;
 }
 
 .about-wrap-icon {
   display: flex;
   padding: 10px;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+
   border-radius: 100px;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  width: 30px;
-  height: 30px;
+
+  width: 40px;
+  height: 40px;
 }
+
 /*-----------------Slider------------*/
 /*div*/
 .about-swipe.swiper.mySwiper {
@@ -151,9 +164,6 @@
 
 /*ul*/
 .about-swipe > .swiper-wrapper {
-  /* display: flex;
-  justify-content: start; */
-
   width: 260px;
   align-items: center;
   text-align: center;
@@ -211,10 +221,13 @@
 
 @media screen and (min-width: 768px) {
   .section-about.container {
-    padding-top: 32px;
+    padding-top: 64px;
     padding-bottom: 45.5px;
   }
 
+  .about-presentation {
+    margin-bottom: 64px;
+  }
   .about-img {
     width: 704px;
     height: 700px;
@@ -241,23 +254,23 @@
     margin-bottom: 96px;
   }
 
-  .ac > .ac-header > .ac-trigger,
-  .ac > .ac-header > .ac-trigger:hover,
-  .ac > .ac-header > .ac-trigger:focus,
-  .ac > .ac-header > .ac-trigger:active {
-    margin-bottom: 8px;
+  .ac > .ac-trigger,
+  .ac > .ac-trigger:hover,
+  .ac > .ac-trigger:focus,
+  .ac > .ac-trigger:active {
     height: 40px;
   }
+
+  .about-accordion > .ac > .ac-trigger {
+    margin-top: 64px;
+  }
+
+  .about-accordion > .ac > .ac-panel > .ac-text {
+    margin-top: 8px;
+  }
+
   .about-ac-text-first {
     margin-bottom: 16px;
-  }
-
-  .ac-panel {
-    margin-bottom: 64px;
-  }
-
-  .about-accordion > .ac::after {
-    bottom: -32px;
   }
 
   /*-----------------Slider------------*/
@@ -290,7 +303,7 @@
 
 @media screen and (min-width: 1440px) {
   .section-about.container {
-    padding-top: 45.5px;
+    padding-top: 96px;
     padding-bottom: 82px;
   }
 
@@ -304,7 +317,6 @@
   .about-img {
     width: 680px;
     height: 700px;
-
     object-fit: cover;
   }
 
@@ -326,11 +338,10 @@
     max-width: 1376px;
   }
 
-  .ac > .ac-header > .ac-trigger,
-  .ac > .ac-header > .ac-trigger:hover,
-  .ac > .ac-header > .ac-trigger:focus,
-  .ac > .ac-header > .ac-trigger:active {
-    margin-bottom: 8px;
+  .ac > .ac-trigger,
+  .ac > .ac-trigger:hover,
+  .ac > .ac-trigger:focus,
+  .ac > .ac-trigger:active {
     height: 40px;
   }
 
@@ -339,6 +350,7 @@
     max-width: 612px;
     min-width: 284px;
     margin-left: 696px;
+    margin-top: 8px;
   }
 
   .about-ac-text-first {
@@ -355,15 +367,15 @@
     border: none;
   }
 
-  .about-accordion > .ac::after {
+  /* .about-accordion > .ac::after {
     content: '';
     background-color: rgba(250, 250, 250, 0.2);
     width: 100%;
     height: 1px;
-    bottom: -20px;
+    bottom: -32px;
 
     position: absolute;
-  }
+  } */
 
   .ac > .ac-header > .ac-trigger::after {
     border-radius: 50%;
