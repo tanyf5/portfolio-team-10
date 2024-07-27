@@ -243,3 +243,8 @@
   background: url(../img/arrow-narrow-left.svg) no-repeat center center;
   background-size: contain;
 }
+
+.swiper-slide.projects-slide.swiper-slide-active {
+  background-color: #1c1d20;
+  border-style: none;
+}
