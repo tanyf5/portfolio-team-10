@@ -1,3 +1,5 @@
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 /*   Mobile menu   */
 
 (() => {
