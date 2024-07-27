@@ -8,28 +8,8 @@ const modal = {
 };
 
 modal.close.addEventListener('click', () => {
-<<<<<<< Updated upstream
-  closeModal();
-});
-modal.container.addEventListener('click', event => {
-  if (event.target === modal.container) {
-    closeModal();
-  }
-});
-
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' || event.key === 'Esc') {
-    closeModal();
-  }
-});
-
-function closeModal() {
-  modal.container.style.display = 'none';
-}
-=======
   modal.container.style.display = 'none';
 });
->>>>>>> Stashed changes
 
 function showModalResponse() {
   modal.container.style.display = 'block';

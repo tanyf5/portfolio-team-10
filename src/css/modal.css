@@ -6,7 +6,7 @@
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: auto; /* Enable scroll if needed *
 <<<<<<< Updated upstream
 =======
   background-color: #0f0f10; /* Fallback color */
@@ -16,7 +16,6 @@
 
 .modal__content {
 <<<<<<< Updated upstream
-  background-color: #1c1d20;
   border: 1px solid rgba(250, 250, 250, 0.1);
   border-radius: 20px;
   padding: 1.25rem;
