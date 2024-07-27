@@ -12,7 +12,7 @@
 @import url('./covers.css');
 @import url('./reviews.css');
 @import url('./footer.css');
-
+@import url('./modal.css');
 
 :root {
   font-family: InterTight, sans-serif;
@@ -20,7 +20,7 @@
   line-height: 24px;
   font-weight: 500;
 
-  color: #FAFAFA;
+  color: #fafafa;
   background-color: #242527;
 
   font-synthesis: none;
