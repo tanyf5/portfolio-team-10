@@ -6,17 +6,12 @@
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed *
-  background-color: #1c1d20;
-<<<<<<< Updated upstream
-=======
   background-color: #0f0f10; /* Fallback color */
->>>>>>> Stashed changes
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 .modal__content {
-<<<<<<< Updated upstream
+  background-color: #1c1d20;
   border: 1px solid rgba(250, 250, 250, 0.1);
   border-radius: 20px;
   padding: 1.25rem;
@@ -74,14 +69,7 @@
     margin: 0 auto;
   }
 }
-=======
-  border: 1px solid rgba(250, 250, 250, 0.1);
-  border-radius: 20px;
-  padding: 64px 32px;
-  width: 91.466667%; /* 343/375 */
-  height: 276px;
-  margin: 50% auto;
-}
+
 .modal-button {
   /* зміна властивості при  */
   color: #fafafa;
@@ -95,20 +83,16 @@
 }
 .modal__body {
 }
->>>>>>> Stashed changes
 .modal__title {
   font-weight: 600;
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.02em;
   text-align: center;
-<<<<<<< Updated upstream
   margin-top: 2.75rem;
   margin-bottom: 1rem;
   text-transform: none;
-=======
   margin-bottom: 1rem;
->>>>>>> Stashed changes
 }
 .title {
 }
