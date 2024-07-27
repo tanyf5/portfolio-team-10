@@ -8,6 +8,7 @@ const modal = {
 };
 
 modal.close.addEventListener('click', () => {
+<<<<<<< Updated upstream
   closeModal();
 });
 modal.container.addEventListener('click', event => {
@@ -25,6 +26,10 @@ document.addEventListener('keydown', event => {
 function closeModal() {
   modal.container.style.display = 'none';
 }
+=======
+  modal.container.style.display = 'none';
+});
+>>>>>>> Stashed changes
 
 function showModalResponse() {
   modal.container.style.display = 'block';

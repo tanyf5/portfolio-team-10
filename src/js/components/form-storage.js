@@ -30,7 +30,11 @@ function inputHandler(event) {
 function submitHandler(event) {
   event.preventDefault();
   if (!formData.email || !formData.comment) {
+<<<<<<< Updated upstream
     alert('Please fill all places');
+=======
+    alert('Please fill all fields!');
+>>>>>>> Stashed changes
     return;
   }
   sendPost(formData);
