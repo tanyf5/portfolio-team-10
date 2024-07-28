@@ -71,13 +71,8 @@
   background-color: transparent;
   border: 1px transparent solid;
 
-<<<<<<< Updated upstream
   font-family: 'InterTight', sans-serif;
-  letter-spacing: -2%;
-=======
-  font-family: 'Inter Tight';
   letter-spacing: -0.32px;
->>>>>>> Stashed changes
   font-weight: 600;
   text-transform: uppercase;
 
@@ -91,13 +86,8 @@
 
 .about-accordion > .ac > .ac-panel > .ac-text {
   font-weight: 500;
-<<<<<<< Updated upstream
-  letter-spacing: -2%;
   font-family: 'InterTight', sans-serif;
-=======
   letter-spacing: -0.32px;
-  font-family: 'Inter Tight';
->>>>>>> Stashed changes
 
   color: rgba(250, 250, 250, 1);
   padding: 0;
