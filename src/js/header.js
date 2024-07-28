@@ -1,5 +1,3 @@
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
-
 /*   Mobile menu   */
 
 (() => {
@@ -14,7 +12,9 @@ import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'bo
         openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
         mobileMenu.classList.toggle('is-open');
 
-        const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
+        const scrollLockMethod = !isMenuOpen
+        ? 'disableBodyScroll'
+        : 'enableBodyScroll';
         bodyScrollLock[scrollLockMethod](document.body);
     };
     

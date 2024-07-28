@@ -12,13 +12,21 @@
 @import url('./reviews.css');
 @import url('./footer.css');
 
-:root {
-  font-family: InterTight, sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
+@font-face {
+  font-family: 'InterTight, sans-serif';
+  src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&display=swap') format('woff');
   font-weight: 500;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'InterTight, sans-serif';
+  src: url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
   color: #fafafa;
   background-color: #1c1d20;
 

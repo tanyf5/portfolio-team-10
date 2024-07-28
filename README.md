@@ -1,6 +1,5 @@
 # Jefferson's Portfolio
 ## by wonderfull Team 10
-!⁠[logo](https://github.com/tanyf5/portfolio-team-10/blob/main/assets/TEAM%2010%20(2).png)
 
 
 This project was developed by team number 10 as part of the FullStack Developer course from GoIT.
