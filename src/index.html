@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <div id="header"></div>
+    <load ="partials/header.html" />
     <main>
-      <div id="hero"></div>
-      <div id="aboutMe"></div>
-      <div id="benefits"></div>
-      <div id="projects"></div>
-      <div id="FAQ"></div>
-      <div id="covers"></div>
-      <div id="reviews"></div>
+      <load ="partials/hero.html" />
+      <load ="partials/aboutMe.html" />
+      <load ="partials/benefits.html" />
+      <load ="partials/projects.html" />
+      <load ="partials/FAQ.html" />
+      <load ="partials/covers.html" />
+      <load ="partials/reviews.html" />
     </main>
-    <div id="footer"></div>
+    <load ="partials/footer.html" />
 
     <script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
     <script type="module" src="./js/main.js"></script>
@@ -37,29 +37,5 @@
     <script type="module" src="./js/reviews.js"></script>
     <script type="module" src="./js/footer.js"></script>
 
-    <script>
-      function loadPartial(elementId, partialFile) {
-        fetch(partialFile)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error(`Failed to load ${partialFile}`);
-            }
-            return response.text();
-          })
-          .then(data => {
-            document.getElementById(elementId).innerHTML = data;
-          })
-          .catch(error => console.error('Error loading partial:', error));
-      }
-      loadPartial('header', 'partials/header.html');
-      loadPartial('hero', 'partials/hero.html');
-      loadPartial('aboutMe', 'partials/aboutMe.html');
-      loadPartial('benefits', 'partials/benefits.html');
-      loadPartial('projects', 'partials/projects.html');
-      loadPartial('FAQ', 'partials/FAQ.html');
-      loadPartial('covers', 'partials/covers.html');
-      loadPartial('reviews', 'partials/reviews.html');
-      loadPartial('footer', 'partials/footer.html');
-    </script>
   </body>
 </html>
