@@ -1,68 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <footer id="footer">
-      <div class="work-together__container container">
-        <div class="work-together__content">
-          <h2 class="work-together__title title">
-            <img
-              src="./img/header-hero/logo.png"
-              alt="portrait"
-              class="work-together__image"
-            />
-            let's <span>work</span> <br />together
-          </h2>
-        </div>
-        <form class="work-together__form">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-            placeholder="clients@gmail.com"
-            class="input__email text-overflow"
-            required
-          />
-          <span class="check__message"></span>
-          <input
-            type="text"
-            name="comment"
-            id="comment"
-            class="text-overflow"
-            placeholder="comments"
-          />
-          <button type="submit" class="form__button">send</button>
-        </form>
-        <ul class="work-together__contacts">
-          <li class="contacts__item">
-            <a href="mailto:lloydjefferson@gmail.com"
-              >lloydjefferson@gmail.com</a
-            >
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+3801111111111">+380 11 1111 11 11</a>
-          </li>
-        </ul>
+<footer id="footer">
+  <div class="work-together__container container">
+    <div class="work-together__content">
+      <h2 class="work-together__title title">
+        <img
+          src="./img/header-hero/logo.png"
+          alt="portrait"
+          class="work-together__image"
+        />
+        let's <span>work</span> <br />together
+      </h2>
+    </div>
+    <form class="work-together__form">
+      <input
+        type="email"
+        name="email"
+        id="email"
+        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        placeholder="clients@gmail.com"
+        class="input__email text-overflow"
+        required
+      />
+      <span class="check__message"></span>
+      <input
+        type="text"
+        name="comment"
+        id="comment"
+        class="text-overflow"
+        placeholder="comments"
+      />
+      <button type="submit" class="form__button">send</button>
+    </form>
+    <ul class="work-together__contacts">
+      <li class="contacts__item">
+        <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+      </li>
+      <li class="contacts__item">
+        <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+      </li>
+    </ul>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal__content">
+      <button type="button" class="modal-button">
+        <svg class="icon__close" width="11" height="11">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+        <span></span>
+      </button>
+      <div class="modal__body">
+        <h2 class="modal__title title"></h2>
+        <p class="modal__text text"></p>
       </div>
-      <div id="modal" class="modal">
-        <div class="modal__content">
-          <button type="button" class="modal-button">
-            <svg class="icon__close" width="11" height="11">
-              <use href="./img/icons.svg#icon-close"></use>
-            </svg>
-            <span></span>
-          </button>
-          <div class="modal__body">
-            <h2 class="modal__title title"></h2>
-            <p class="modal__text text"></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+    </div>
+  </div>
+</footer>
