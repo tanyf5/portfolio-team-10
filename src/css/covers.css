@@ -5,12 +5,7 @@
     box-sizing: border-box;
   }
 
-  .section-covers {
-    position: relative;
-  }
-
   .marquee-container {
-    position: absolute;
     overflow: hidden;
     width: 100%;
     backdrop-filter: blur(30px);
