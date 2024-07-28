@@ -6,6 +6,7 @@
     const closeMenuBtn = document.querySelector('.js-close-mobile-menu');
     const closeMenuLink = document.querySelectorAll('.mobile-menu-link');
     const workTogetherBtn = document.querySelector('.order-btn-menu');
+    const body = document.body;
     
     const toggleMenu = () => {
         const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true';
