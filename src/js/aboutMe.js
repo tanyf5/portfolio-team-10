@@ -13,7 +13,6 @@ const refs = {
   nextSlide: document.querySelector('.about-btn-next'),
   btnNext: document.querySelector('.about-btn-next'),
 };
-//aria-disablet
 
 //!==================== ACCORDION ======================
 new accordion(refs.aboutAccordion, {
@@ -42,12 +41,14 @@ const swiper = new Swiper(refs.swipSkill, {
     nextEl: refs.btnNext,
   },
   direction: 'horizontal',
-  slidesPerView: 2,
   spaceBetween: 0,
   enabled: true,
   loop: true,
   watchOverflow: false,
   breakpoints: {
+    375: {
+      slidesPerView: 2,
+    },
     768: {
       slidesPerView: 3,
     },
