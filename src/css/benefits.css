@@ -3,6 +3,10 @@
     flex-direction: column;
     justify-content: flex-end;  
 } */
+.benefits {
+    padding-top: 82px;
+    padding-bottom: 82px;
+}
 .benefits-info {
     padding: 0 24px 24px 24px;
 }
