@@ -55,5 +55,11 @@ document.querySelectorAll('.ac-trigger').forEach(triggerElement => {
     if (event.key === 'Enter') {
       triggerElement.click();
     }
+    if (event.key === 'Escape') {
+      const faqItem = triggerElement.closest('.ac');
+      if (faqItem.classList.contains('is-active')) {
+        triggerElement.click();
+      }
+    }
   });
 });
