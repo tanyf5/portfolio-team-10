@@ -1,6 +1,6 @@
 .section-about.container {
-  padding-top: 32px;
-  padding-bottom: 45.5px;
+  padding-top: 64px;
+  padding-bottom: 32px;
 }
 
 .about-hidden-title {
@@ -9,13 +9,6 @@
 
 .about-presentation {
   margin-bottom: 32px;
-}
-
-.about-img {
-  width: 343px;
-  height: 500px;
-  border-radius: 24px;
-  object-fit: cover;
 }
 
 .about-presentation-bcg {
@@ -28,6 +21,13 @@
   padding-top: 32px;
 }
 
+.about-img {
+  width: 343px;
+  height: 500px;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
 .about-text {
   width: 279px;
   height: 196px;
@@ -35,10 +35,10 @@
 
   font-weight: 500;
   text-transform: uppercase;
-  font-family: 'Inter Tight';
+  font-family: 'InterTight', sans-serif;
   font-size: 24px;
   line-height: 1.17;
-  letter-spacing: -3%;
+  letter-spacing: -0.48px;
   text-align: left;
 }
 
@@ -54,53 +54,61 @@
 
 .about-accordion {
   max-width: 343px;
+  margin-bottom: 64px;
 }
 
-.ac > .ac-trigger > .ac-header,
-.ac > .ac-trigger > .ac-header:hover,
-.ac > .ac-trigger > .ac-header:focus,
-.ac > .ac-trigger > .ac-header:active {
+.about-accordion > .ac {
+  margin-top: 0;
+}
+
+.about-accordion > .ac > .ac-trigger > .ac-header,
+.about-accordion > .ac > .ac-trigger > .ac-header:hover,
+.about-accordion > .ac > .ac-trigger > .ac-header:focus,
+.about-accordion > .ac > .ac-trigger > .ac-header:active {
   color: #fafafa;
   opacity: 40%;
 
   background-color: transparent;
   border: 1px transparent solid;
 
-  font-family: 'Inter Tight';
-  letter-spacing: -2%;
+  font-family: 'InterTight', sans-serif;
+  letter-spacing: -0.32px;
   font-weight: 600;
   text-transform: uppercase;
 
   margin-bottom: 12px;
   padding: 0;
-  height: 36px;
+}
+
+.about-accordion > .ac > .ac-trigger {
+  height: 40px;
 }
 
 .about-accordion > .ac > .ac-panel > .ac-text {
   font-weight: 500;
-  letter-spacing: -2%;
-  font-family: 'Inter Tight';
+  font-family: 'InterTight', sans-serif;
+  letter-spacing: -0.32px;
 
   color: rgba(250, 250, 250, 1);
   padding: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-top: 12px;
 }
 
 .about-accordion > .ac > .ac-panel > .ac-text:last-child {
-  padding-bottom: 0;
+  padding-bottom: 20px;
 }
 
 .about-accordion > .ac > .ac-trigger {
   display: flex;
   justify-content: space-between;
-  padding-left: 0;
-}
-.about-ac-text-first {
-  margin-bottom: 32px;
+  padding: 0;
+  margin-top: 40px;
+  height: 72px;
 }
 
-.ac-panel {
-  margin-bottom: 40px;
+.about-ac-text-first {
+  margin-bottom: 32px;
 }
 
 .about-accordion > .ac {
@@ -109,65 +117,72 @@
   border: none;
 }
 
+.about-accordion > .ac::after {
+  content: '';
+  background-color: rgba(250, 250, 250, 0.2);
+  height: 1px;
+  width: 100%;
+
+  bottom: 0px;
+  position: absolute;
+}
+
 .about-accordion > .ac > .ac-trigger::after {
   content: '';
 }
-/* .ac > .ac-trigger::after {
-  border-radius: 50%;
-  border: 1px rgba(250, 250, 250, 0.2) solid;
-  width: 36px;
-  height: 36px;
-} */
 
-.about-icon {
+.about-wrap-icon > .about-icon {
   stroke: #fafafa;
   fill: none;
-  width: 20px;
-  height: 20px;
 }
 
 .about-wrap-icon {
   display: flex;
   padding: 10px;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+
   border-radius: 100px;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  width: 30px;
-  height: 30px;
+
+  width: 40px;
+  height: 40px;
 }
+
 /*-----------------Slider------------*/
 /*div*/
-.about-swipe.swiper.mySwiper {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin-left: 0;
+.about-swiper {
   width: 343px;
   height: 130px;
-
-  margin-top: 32px;
-}
-
-/*ul*/
-.about-swipe > .swiper-wrapper {
-  /* display: flex;
-  justify-content: start; */
-
-  width: 260px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+  position: relative;
+}
+
+.about-swiper > .swiper.mySwiper {
+  /* display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; */
+  margin-left: 0;
+  width: 260px;
+  height: 130px;
+
+  /* margin-top: 32px; */
+  overflow: hidden;
 }
 
 /*li*/
-.about-swipe.swiper.mySwiper > .swiper-wrapper > .swiper-slide {
+.about-swiper > .swiper.mySwiper > .swiper-wrapper > .swiper-slide {
   box-sizing: border-box;
   width: 130px;
-  height: 130px;
+
   border: 1px rgba(250, 250, 250, 0.2) solid;
   border-radius: 50%;
 
-  font-family: 'Inter Tight';
+  font-family: 'InterTight', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.21;
@@ -176,45 +191,57 @@
   align-items: center;
   justify-content: center;
 }
-
-.swiper-slide-active {
+.about-swiper > .mySwiper > .swiper-wrapper > .swiper-slide-active {
   background-color: #ed3b44;
   border-style: none;
 }
 
+.swiper > .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+
 /*BTN*/
-.about-swipe > .swiper-button-next::after {
+.about-swiper > .swiper-button-next::after {
   display: none;
 }
 
-.about-swipe > .swiper-button-next {
+.about-swiper > .swiper-button-next {
   display: flex;
-  width: 86px;
+  display: flex;
+  justify-content: right;
 }
-.about-btn-next {
+
+.about-btn-next.swiper-button-next {
+  height: 28px;
+  width: 28px;
   background-color: transparent;
   border: none;
   align-items: center;
-  margin-right: 0;
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .about-btn-next > .about-svg-nav {
-  fill: #3b3b3b;
+  stroke: #3b3b3b;
   width: 28px;
   height: 28px;
+  background-color: transparent;
 }
 
 /*<----------768px--------->*/
 
 @media screen and (min-width: 768px) {
   .section-about.container {
-    padding-top: 32px;
+    padding-top: 64px;
     padding-bottom: 45.5px;
   }
 
+  .about-presentation {
+    margin-bottom: 64px;
+  }
   .about-img {
     width: 704px;
     height: 700px;
@@ -241,48 +268,65 @@
     margin-bottom: 96px;
   }
 
-  .ac > .ac-header > .ac-trigger,
-  .ac > .ac-header > .ac-trigger:hover,
-  .ac > .ac-header > .ac-trigger:focus,
-  .ac > .ac-header > .ac-trigger:active {
-    margin-bottom: 8px;
+  .about-accordion > .ac > .ac-trigger,
+  .about-accordion > .ac > .ac-trigger:hover,
+  .about-accordion > .ac > .ac-trigger:focus,
+  .about-accordion > .ac > .ac-trigger:active {
     height: 40px;
   }
+  .about-accordion > .ac > .ac-panel > .ac-text:last-child {
+    padding-bottom: 32px;
+  }
+
+  .about-accordion > .ac > .ac-trigger {
+    margin-top: 64px;
+  }
+
+  .about-accordion > .ac > .ac-panel > .ac-text {
+    margin-top: 8px;
+  }
+
   .about-ac-text-first {
     margin-bottom: 16px;
-  }
-
-  .ac-panel {
-    margin-bottom: 64px;
-  }
-
-  .about-accordion > .ac::after {
-    bottom: -32px;
   }
 
   /*-----------------Slider------------*/
 
   /*div*/
-  .about-swipe.swiper.mySwiper {
+
+  .about-swiper {
+    width: 704px;
+    height: 200px;
+  }
+
+  .about-swiper > .swiper.mySwiper {
     display: flex;
     flex-wrap: nowrap;
 
-    width: 704px;
+    width: 600px;
     height: 200px;
-
-    margin-top: 32px;
   }
 
   /*ul*/
   .mySwiper > .swiper-wrapper {
-    width: 600px;
     height: 100%;
   }
 
   /*li*/
   .mySwiper.swiper.about-swipe > .swiper-wrapper > .swiper-slide {
-    height: 100%;
     width: 200px;
+  }
+
+  /*btn*/
+  .about-btn-next.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+  }
+
+  .about-btn-next > .about-svg-nav {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -290,7 +334,7 @@
 
 @media screen and (min-width: 1440px) {
   .section-about.container {
-    padding-top: 45.5px;
+    padding-top: 96px;
     padding-bottom: 82px;
   }
 
@@ -304,7 +348,6 @@
   .about-img {
     width: 680px;
     height: 700px;
-
     object-fit: cover;
   }
 
@@ -326,12 +369,11 @@
     max-width: 1376px;
   }
 
-  .ac > .ac-header > .ac-trigger,
-  .ac > .ac-header > .ac-trigger:hover,
-  .ac > .ac-header > .ac-trigger:focus,
-  .ac > .ac-header > .ac-trigger:active {
-    margin-bottom: 8px;
-    height: 40px;
+  .about-accordion > .ac > .ac-trigger,
+  .about-accordion > .ac > .ac-trigger:hover,
+  .about-accordion > .ac > .ac-trigger:focus,
+  .about-accordion > .ac > .ac-trigger:active {
+    height: 72px;
   }
 
   .about-accordion > .ac > .ac-panel > .ac-text {
@@ -339,13 +381,14 @@
     max-width: 612px;
     min-width: 284px;
     margin-left: 696px;
+    margin-top: 8px;
   }
 
   .about-ac-text-first {
     margin-bottom: 32px;
   }
 
-  .ac-panel {
+  .about-accordion > .ac-panel {
     margin-bottom: 40px;
   }
 
@@ -355,17 +398,7 @@
     border: none;
   }
 
-  .about-accordion > .ac::after {
-    content: '';
-    background-color: rgba(250, 250, 250, 0.2);
-    width: 100%;
-    height: 1px;
-    bottom: -20px;
-
-    position: absolute;
-  }
-
-  .ac > .ac-header > .ac-trigger::after {
+  .about-accordion > .ac > .ac-header > .ac-trigger::after {
     border-radius: 50%;
     border: 1px rgba(250, 250, 250, 0.2) solid;
     width: 36px;
@@ -377,27 +410,28 @@
     content: '';
   }
 
-  .ac > .ac-header {
+  .about-accordion > .ac > .ac-header {
     height: 36px;
   }
 
   /*-----------------Slider------------*/
 
   /*div*/
+  .about-swiper {
+    width: 1312px;
+    margin: 0 auto;
+  }
 
-  .about-swipe.swiper.mySwiper {
+  .about-swiper > .swiper.mySwiper {
     display: flex;
     flex-wrap: nowrap;
 
-    width: 1400px;
+    width: 1200px;
     height: 200px;
-
-    margin-top: 32px;
   }
 
   /*ul*/
   .mySwiper > .swiper-wrapper {
     width: 1200px;
-    height: 200px;
   }
 }

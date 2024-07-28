@@ -1,0 +1,111 @@
+.modal {
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal__content {
+  background-color: #1c1d20;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 1.25rem;
+  width: 21.4375rem;
+  height: 17.25rem;
+  width: 21.4375rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .modal__content {
+    width: 30.75rem;
+    height: 15.375rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .modal__content {
+  }
+}
+
+.modal-button {
+  float: right;
+  position: relative;
+  width: 1.375rem;
+  height: 1.375rem;
+  background-color: inherit;
+  border: none;
+}
+.modal-button span::before,
+.modal-button span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fafafa;
+}
+
+.modal-button span::before {
+  top: center;
+  transform: rotate(45deg);
+}
+.modal-button span::after {
+  bottom: center;
+  transform: rotate(-45deg);
+}
+
+/* клас для svg */
+/* .icon__close {} */
+
+.modal__body {
+  /* width: 73.98374%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  .modal__body {
+    width: 22.75rem;
+  }
+}
+
+.modal-button {
+  color: #fafafa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: inherit;
+  border: none;
+  position: relative;
+  /* top: -26px; */
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+.title {
+}
+.modal__text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+.text {
+}
