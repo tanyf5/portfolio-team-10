@@ -1,6 +1,5 @@
 <h1 align="center">Jefferson's Portfolio</h1>
 <h2 align="center">by wonderfull Team 10</h2>
-<img href="./src/img/readme/TEAM 10 (2).png" align="center">
 
 
 <p>This project was developed by team number 10 as part of the FullStack Developer course from GoIT.</p>
@@ -25,38 +24,38 @@ Include interactive elements to demonstrate <a href="https://git.io/typing-svg">
 <h3 align="left">About our Team</h3>
 
 <h4>Team Lead, Header section Developer</h4>
-[Tetiana Bondarchuk](https://github.com/tanyf5)
+![Tetiana Bondarchuk](<https://github.com/tanyf5>)
 
 <h4>Hero section Developer</h4>
-[Oleh Lutchenko](https://github.com/LutchenkoOleh)
+![Oleh Lutchenko](<https://github.com/LutchenkoOleh>)
 
 <h4>About me section Developer</h4>
-[Arina Patlakha](https://github.com/ArynaPatlakh)
+![Arina Patlakha](<https://github.com/ArynaPatlakh>)
 
 <h4>Benefits section Developer</h4>
-[Natali Udovik]{https://github.com/Natali-Udovyk}
+![Natali Udovik](<https://github.com/Natali-Udovyk>)
 
 <h4>Projects section Developer</h4>
-[Dmytro Holovskyi](https://github.com/dgold4545)
+![Dmytro Holovskyi](<https://github.com/dgold4545>)
 
 <h4>FAQ section Developer</h4>
-[Volodymyr Fedorov](https://github.com/Chester-OZ)
+![Volodymyr Fedorov](<https://github.com/Chester-OZ>)
 
 <h4>Covers section Developer</h4>
-[Tetiana Shevchenko](https://github.com/tatilunarsnail)
+![Tetiana Shevchenko](<https://github.com/tatilunarsnail>)
 
 <h4>Reviews section Developer</h4>
-[Arsen Hruhorchyk]()
+![Arsen Hruhorchyk]()
 
 <h4>Work together section Developer</h4>
-[Ihor Mikheiev](https://github.com/ihor-mikheyev)
+![Ihor Mikheiev](<https://github.com/ihor-mikheyev>)
 
 
 
 <h3 align="left">About Jefferson's Portfolio</h3>
 
 <h4>Technologies used</h4>
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)   ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)   ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+HTML, CSS, JavaScript
 
 
 <h4>Frameworks, Platforms and Libraries</h4>
@@ -65,4 +64,4 @@ NodeJS, Vite, Axios, Accordion, BodyScrollLock, Swiper, Typed.
 
 
 <h4>Sources</h4>
-[Design Mockup in Figma](https://www.figma.com/design/fww6BUe77KIm14vo9i8Agm/Portfolio?node-id=0-1&t=byz3MNVr6TrVXAwi-0)
+![Design Mockup in Figma](<https://www.figma.com/design/fww6BUe77KIm14vo9i8Agm/Portfolio?node-id=0-1&t=byz3MNVr6TrVXAwi-0>)
