@@ -10,6 +10,20 @@
 @import url('./footer.css');
 @import url('./modal.css');
 
+@font-face {
+  font-family: 'InterTight', sans-serif;
+  src: url('/src/fonts/InterTight-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InterTight', sans-serif;
+  src: url('/src/fonts/InterTight-SemiBold.ttf') format('ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
 :root {
   font-family: InterTight, sans-serif;
   font-size: 16px;
