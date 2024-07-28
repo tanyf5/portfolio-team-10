@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/portfolio-team-10/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio-team-10/assets/vendor-2d7b026e.js">
     <link rel="stylesheet" href="/portfolio-team-10/assets/vendor-d5558669.css">
-    <link rel="stylesheet" href="/portfolio-team-10/assets/index-3fefd42a.css">
+    <link rel="stylesheet" href="/portfolio-team-10/assets/index-9c19dfc0.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -87,7 +87,7 @@
     </div>
 </header>
     <main>
-      <section class="hero" id="hero">
+      <section class="hero container" id="hero">
   <div class="hero-wrap">
     <h1 class="hero-title">Hello. <br>
       I’m Fullstack developer
@@ -97,6 +97,7 @@
   </div>
 
 </section>
+
       <section class="container section-about" id="about-me">
   <h2 class="about-hidden-title">About Me</h2>
   <div class="about-presentation">
@@ -108,11 +109,25 @@
         personality.
       </p>
     </div>
-    <img
-      src="/portfolio-team-10/assets/portrait-img-2x-e0228029.webp"
-      alt=""
-      class="about-img"
-    />
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        width="704"
+        height="700"
+        srcset="/portfolio-team-10/assets/portrait-img-0f06bef9.webp 1x, /portfolio-team-10/assets/portrait-img-2x-e0228029.webp 2x"
+      />
+      <source
+        media="(max-width: 767px)"
+        width="680"
+        height="700"
+        srcset="/portfolio-team-10/assets/portrait-img-0f06bef9.webp 1x, /portfolio-team-10/assets/portrait-img-2x-e0228029.webp 2x"
+      />
+      <img
+        class="about-img"
+        src="./img/header-hero/portrait-img.webp "
+        alt="My Photo"
+      />
+    </picture>
   </div>
 
   <div class="about-accordion">
@@ -191,22 +206,24 @@
     </div>
   </div>
 
-  <div class="swiper mySwiper about-swipe">
-    <ul class="swiper-wrapper">
-      <li class="swiper-slide">HTML/CSS</li>
-      <li class="swiper-slide">JavaScript</li>
-      <li class="swiper-slide">React</li>
-      <li class="swiper-slide">Node.js</li>
-      <li class="swiper-slide">React Native</li>
-      <li class="swiper-slide">Soft skills</li>
-    </ul>
-    <div class="swiper-button-next">
-      <button type="button" class="about-btn-next">
-        <svg class="about-svg-nav" width="28px" height="28px">
-          <use href="/portfolio-team-10/assets/icons-c732da97.svg#icon-arrow-right"></use>
-        </svg>
-      </button>
+  <div class="about-swiper">
+    <div class="swiper mySwiper about-swipe">
+      <ul class="swiper-wrapper">
+        <li class="swiper-slide">HTML/CSS</li>
+        <li class="swiper-slide">JavaScript</li>
+        <li class="swiper-slide">React</li>
+        <li class="swiper-slide">Node.js</li>
+        <li class="swiper-slide">React Native</li>
+        <li class="swiper-slide">Soft skills</li>
+      </ul>
     </div>
+
+    <span class="swiper-notification">​</span>​
+    <button type="button" class="about-btn-next swiper-button-next">
+      <svg class="about-svg-nav" width="28" height="28">
+        <use href="/portfolio-team-10/assets/icons-c732da97.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
   </div>
 </section>
 
