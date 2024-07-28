@@ -1,3 +1,4 @@
+import iziToast from 'izitoast';
 import { sendPost } from './api';
 import { showModalResponse } from './modal';
 
@@ -30,11 +31,7 @@ function inputHandler(event) {
 function submitHandler(event) {
   event.preventDefault();
   if (!formData.email || !formData.comment) {
-<<<<<<< Updated upstream
-    alert('Please fill all places');
-=======
-    alert('Please fill all fields!');
->>>>>>> Stashed changes
+    iziToast.show({ message: 'Please fill all places' });
     return;
   }
   sendPost(formData);
