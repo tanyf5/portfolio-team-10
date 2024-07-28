@@ -24,7 +24,7 @@ Include interactive elements to demonstrate <a href="https://git.io/typing-svg">
 <h3 align="left">About our Team</h3>
 
 <h4>Team Lead, Header section Developer</h4>
-![Tetiana Bondarchuk](<https://github.com/tanyf5>)
+![Tetiana Bondarchuk](https://github.com/tanyf5)
 
 <h4>Hero section Developer</h4>
 ![Oleh Lutchenko](<https://github.com/LutchenkoOleh>)
