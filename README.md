@@ -1,67 +1,68 @@
-<h1 align="center">Jefferson's Portfolio</h1>
-<h2 align="center">by wonderfull Team 10</h2>
+# Jefferson's Portfolio
+## by wonderfull Team 10
+!⁠[logo]​(https://github.com/tanyf5/portfolio-team-10/blob/main/assets/TEAM%2010%20(2).png)
 
 
-<p>This project was developed by team number 10 as part of the FullStack Developer course from GoIT.</p>
+This project was developed by team number 10 as part of the FullStack Developer course from GoIT.
 
-<h3 align="left">Project goal</h3>
-<p>The primary goal of this project is to create a comprehensive and visually appealing portfolio website for a FullStack Developer. This portfolio will showcase the developer's skills, projects, and professional experience. It will serve as a personal branding tool and a platform for potential employers or clients to evaluate the developer's capabilities and past work.</p>
+## Project goal
+The primary goal of this project is to create a comprehensive and visually appealing portfolio website for a FullStack Developer. This portfolio will showcase the developer's skills, projects, and professional experience. It will serve as a personal branding tool and a platform for potential employers or clients to evaluate the developer's capabilities and past work.
 
-<h4>To showcase Skills and Expertise</h4>
-<p>Display proficiency in both frontend and backend technologies.
+### To showcase Skills and Expertise
+Display proficiency in both frontend and backend technologies.
 Highlight key technical skills such as HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, etc.
-Include interactive elements to demonstrate <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=1870F7&width=435&lines=coding+abilities." alt="Typing SVG" /></a></p>
+Include interactive elements to demonstrate <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=1870F7&width=435&lines=coding+abilities." alt="Typing SVG" /></a>
 
-<h4>To present Completed Projects</h4>
-<p>Provide descriptions of significant projects, including the technologies used and screenshots.</p>
+### To present Completed Projects
+Provide descriptions of significant projects, including the technologies used and screenshots.
 
-<h4>To show Professional Experience</h4>
-<p>Outline relevant work experience, emphasizing roles and responsibilities.</p>
-
-
-
-
-<h3 align="left">About our Team</h3>
-
-<h4>Team Lead, Header section Developer</h4>
-![Tetiana Bondarchuk](https://github.com/tanyf5)
-
-<h4>Hero section Developer</h4>
-![Oleh Lutchenko](<https://github.com/LutchenkoOleh>)
-
-<h4>About me section Developer</h4>
-![Arina Patlakha](<https://github.com/ArynaPatlakh>)
-
-<h4>Benefits section Developer</h4>
-![Natali Udovik](<https://github.com/Natali-Udovyk>)
-
-<h4>Projects section Developer</h4>
-![Dmytro Holovskyi](<https://github.com/dgold4545>)
-
-<h4>FAQ section Developer</h4>
-![Volodymyr Fedorov](<https://github.com/Chester-OZ>)
-
-<h4>Covers section Developer</h4>
-![Tetiana Shevchenko](<https://github.com/tatilunarsnail>)
-
-<h4>Reviews section Developer</h4>
-![Arsen Hruhorchyk]()
-
-<h4>Work together section Developer</h4>
-![Ihor Mikheiev](<https://github.com/ihor-mikheyev>)
+### To show Professional Experience
+Outline relevant work experience, emphasizing roles and responsibilities.
 
 
 
-<h3 align="left">About Jefferson's Portfolio</h3>
 
-<h4>Technologies used</h4>
+## About our Team
+
+- Team Lead, Header section Developer
+[Tetiana Bondarchuk](https://github.com/tanyf5)
+
+- Hero section Developer
+[Oleh Lutchenko](https://github.com/LutchenkoOleh)
+
+- About me section Developer
+[Arina Patlakha](https://github.com/ArynaPatlakh)
+
+- Benefits section Developer
+[Natali Udovik](https://github.com/Natali-Udovyk)
+
+- Projects section Developer
+[Dmytro Holovskyi](https://github.com/dgold4545)
+
+- FAQ section Developer
+[Volodymyr Fedorov](https://github.com/Chester-OZ)
+
+- Covers section Developer
+[Tetiana Shevchenko](https://github.com/tatilunarsnail)
+
+- Reviews section Developer
+[Arsen Hruhorchyk]()
+
+- Work together section Developer
+[Ihor Mikheiev](https://github.com/ihor-mikheyev)
+
+
+
+## About Jefferson's Portfolio
+
+### Technologies used
 HTML, CSS, JavaScript
 
 
-<h4>Frameworks, Platforms and Libraries</h4>
+### Frameworks, Platforms and Libraries
 NodeJS, Vite, Axios, Accordion, BodyScrollLock, Swiper, Typed.
 
 
 
-<h4>Sources</h4>
+### Sources
 ![Design Mockup in Figma](<https://www.figma.com/design/fww6BUe77KIm14vo9i8Agm/Portfolio?node-id=0-1&t=byz3MNVr6TrVXAwi-0>)
