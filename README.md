@@ -65,4 +65,4 @@ NodeJS, Vite, Axios, Accordion, BodyScrollLock, Swiper, Typed.
 
 
 ### Sources
-![Design Mockup in Figma](<https://www.figma.com/design/fww6BUe77KIm14vo9i8Agm/Portfolio?node-id=0-1&t=byz3MNVr6TrVXAwi-0>)
+![Design Mockup in Figma](https://www.figma.com/design/fww6BUe77KIm14vo9i8Agm/Portfolio?node-id=0-1&t=byz3MNVr6TrVXAwi-0)
