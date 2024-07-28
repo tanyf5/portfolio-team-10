@@ -1,6 +1,5 @@
-const images = document.querySelectorAll('.covers-img');
-
 document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.covers-img');
     const marqueeContainer = document.querySelector('.marquee-container');
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -19,28 +18,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     observer.observe(marqueeContainer);
-});
 
-const marqueeRows = document.querySelectorAll('.marquee-row');
+    const marqueeRows = document.querySelectorAll('.marquee-row');
 
-function stopImages(event) {
-    if (event.target.nodeName !== "IMG") {
-        return;
-    };
+    function stopImages(event) {
+        if (event.target.nodeName !== 'IMG') {
+            return;
+        }
 
-    const rowClicked = event.target.parentElement;
+        const rowClicked = event.target.parentElement;
 
-    marqueeRows.forEach(row => {
-        Array.from(row.children).forEach(child => {
-            child.style.animationPlayState = 'running';
+        const isRowPaused = Array.from(rowClicked.children).some(child => child.style.animationPlayState === 'paused');
+
+        marqueeRows.forEach(row => {
+            Array.from(row.children).forEach(child => {
+                child.style.animationPlayState = 'running';
+            });
         });
-    });
 
-    Array.from(rowClicked.children).forEach(child => {
-        child.style.animationPlayState = 'paused';
-    });
-};
+        if (isRowPaused) {
+            Array.from(rowClicked.children).forEach(child => {
+                child.style.animationPlayState = 'running';
+            });
+        } else {
+            Array.from(rowClicked.children).forEach(child => {
+                child.style.animationPlayState = 'paused';
+            });
+        }
+    }
 
-marqueeRows.forEach(row => {
-    row.addEventListener('click', stopImages);
+    document.querySelector('.marquee-container').addEventListener('click', stopImages);
 });
