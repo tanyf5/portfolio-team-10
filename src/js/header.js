@@ -16,6 +16,7 @@
         ? 'disableBodyScroll'
         : 'enableBodyScroll';
         bodyScrollLock[scrollLockMethod](document.body);
+        body.classList.toggle('no-scroll', mobileMenu.classList.contains('is-open'));
     };
     
     closeMenuLink.forEach(item => item.addEventListener('click', toggleMenu));

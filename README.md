@@ -59,7 +59,7 @@ HTML, CSS, JavaScript
 
 
 ### Frameworks, Platforms and Libraries
-NodeJS, Vite, Axios, Accordion, BodyScrollLock, Swiper, Typed.
+NodeJS, Vite, Axios, Accordion, Swiper, Typed.
 
 
 
