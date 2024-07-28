@@ -13,6 +13,15 @@
   letter-spacing: -0.03em;
 }
 
+footer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(59, 59, 59, 0.1) 16.67%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+
 .container {
   overflow: hidden;
 }
@@ -126,6 +135,7 @@ input#comment {
   display: flex;
   gap: 0.25rem;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 .contacts__item {
   font-size: 0.875rem;
@@ -167,6 +177,7 @@ input#comment {
 
   .work-together__contacts {
     gap: 0.5rem;
+    margin-bottom: 11.6875rem;
   }
 }
 
