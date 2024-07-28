@@ -11,6 +11,12 @@
 @import url('./covers.css');
 @import url('./reviews.css');
 @import url('./footer.css');
+@import url('./modal.css');
+
+:root {
+  font-family: InterTight, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 
 @font-face {
   font-family: 'InterTight, sans-serif';
@@ -28,7 +34,6 @@
 
 :root {
   color: #fafafa;
-  background-color: #1c1d20;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
