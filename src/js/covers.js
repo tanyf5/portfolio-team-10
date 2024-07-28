@@ -15,23 +15,32 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.5 // Trigger when 50% of the element is visible
+        threshold: 0.1
     });
 
     observer.observe(marqueeContainer);
 });
 
-function stopImages(event) {
-    const row = event.target.parentElement;
-    Array.from(row.children).forEach(child => {
-        if (child.style.animationPlayState === 'paused') {
-            child.style.animationPlayState = 'running';
-        } else {
-            child.style.animationPlayState = 'paused';
-        }
-    });
-}
+const marqueeRows = document.querySelectorAll('.marquee-row');
 
-images.forEach(img => {
-    img.addEventListener('click', stopImages);
+function stopImages(event) {
+    if (event.target.nodeName !== "IMG") {
+        return;
+    };
+
+    const rowClicked = event.target.parentElement;
+
+    marqueeRows.forEach(row => {
+        Array.from(row.children).forEach(child => {
+            child.style.animationPlayState = 'running';
+        });
+    });
+
+    Array.from(rowClicked.children).forEach(child => {
+        child.style.animationPlayState = 'paused';
+    });
+};
+
+marqueeRows.forEach(row => {
+    row.addEventListener('click', stopImages);
 });

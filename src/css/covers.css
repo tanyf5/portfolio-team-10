@@ -5,12 +5,7 @@
     box-sizing: border-box;
   }
 
-  .section-covers {
-    position: relative;
-  }
-
   .marquee-container {
-    position: absolute;
     overflow: hidden;
     width: 100%;
     backdrop-filter: blur(30px);
@@ -21,7 +16,7 @@
     height: 508px;
   }
 
-  .marquee-row, .marquee-row-reversed {
+  .marquee-row, .row-reversed {
      transform: rotate(17deg);
      display: flex;
      align-items: center;
@@ -29,7 +24,7 @@
      width: 200%;
   }
 
-  .marquee-row-reversed {
+  .row-reversed {
     flex-direction: row-reverse;
   }
 
@@ -46,7 +41,7 @@
     flex-shrink: 0;
   }
 
-  .marquee-row-reversed img {
+  .row-reversed img {
     margin-right: 20px;
     margin-bottom: 25px;
     width: 282px;
@@ -95,7 +90,7 @@
         width: 544px;
         height: 314px;
     }
-    .marquee-row-reversed img {
+    .row-reversed img {
         margin-right: 40px;
         margin-bottom: 50px;
         width: 544px;
