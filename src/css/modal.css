@@ -33,14 +33,14 @@
 }
 
 .modal-button {
-  float: right;
   position: relative;
   width: 1.375rem;
   height: 1.375rem;
   background-color: inherit;
   border: none;
 }
-.modal-button span::before,
+
+/* .modal-button span::before,
 .modal-button span::after {
   content: '';
   position: absolute;
@@ -57,10 +57,17 @@
 .modal-button span::after {
   bottom: center;
   transform: rotate(-45deg);
-}
+} */
 
 /* клас для svg */
-/* .icon__close {} */
+.icon__close {
+  position: absolute;
+  bottom: 32%;
+  left: 32%;
+  background-color: transparent;
+  border: none;
+  stroke: #fafafa;
+}
 
 .modal__body {
   /* width: 73.98374%; */
