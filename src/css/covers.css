@@ -39,9 +39,10 @@
     width: 282px;
     height: 162px;
     animation-name: marqueeLine;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
     flex-shrink: 0;
   }
 
@@ -51,9 +52,10 @@
     width: 282px;
     height: 162px;
     animation-name: marqueeLineReversed;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
     flex-shrink: 0;
   }
 
