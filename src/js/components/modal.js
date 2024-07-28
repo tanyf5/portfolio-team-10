@@ -12,7 +12,7 @@ modal.close.addEventListener('click', () => {
 });
 
 function showModalResponse() {
-  modal.container.style.display = 'block';
+  modal.container.style.display = 'flex';
   modal.title.innerHTML = responseObject.title;
   modal.text.innerHTML = responseObject.message;
 }
