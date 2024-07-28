@@ -1,13 +1,12 @@
 .hero {
-  margin: 0 auto;
-  max-width: 375px;
-  padding: 0 16px 32px 16px;
+
   height: auto;
   background: url('../img/header-hero/background-img.webp'), rgb(28, 29, 32);
   background-size: 80% 100%, 20% 100%;
   background-repeat: no-repeat;
   background-position: left, right;
   display: flex;
+
 }
 
 .hero-wrap {}
@@ -49,7 +48,7 @@
   cursor: pointer;
   margin-top: 212px;
   width: 342px;
-
+  margin-bottom: 32px;
 }
 
 .hero-list-item {
@@ -66,6 +65,14 @@
   min-width: 176px;
 }
 
+.hero-list-item:hover {
+  border: 1px solid #fafafa;
+}
+
+.hero-list-item:focus {
+  border: 1px solid #fafafa;
+}
+
 .hero-link {
   font-family: 'InterTight', sans-serif;
   font-weight: 500;
@@ -80,8 +87,6 @@
 
 @media screen and (min-width:768px) {
   .hero {
-    max-width: 768px;
-    padding: 0 32px 32px 32px;
     background-size: 75% 100%, 25% 100%;
   }
 
@@ -119,7 +124,6 @@
 
 @media screen and (min-width:1440px) {
   .hero {
-    max-width: 1440px;
     background-size: 50% 100%, 50% 100%;
   }
 
