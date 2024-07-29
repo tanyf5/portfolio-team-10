@@ -19,8 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     observer.observe(marqueeContainer);
 
-    const marqueeRows = document.querySelectorAll('.marquee-row');
-
     function stopImages(event) {
         if (event.target.nodeName !== 'IMG') {
             return;
@@ -28,21 +26,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const rowClicked = event.target.parentElement;
 
-        const isRowPaused = Array.from(rowClicked.children).some(child => child.style.animationPlayState === 'paused');
+        const marqueeRows = document.querySelectorAll('.marquee-row');
 
-        marqueeRows.forEach(row => {
-            Array.from(row.children).forEach(child => {
-                child.style.animationPlayState = 'running';
-            });
-        });
-
-        if (isRowPaused) {
+        if (event.target.style.animationPlayState === 'paused') {
             Array.from(rowClicked.children).forEach(child => {
                 child.style.animationPlayState = 'running';
             });
         } else {
             Array.from(rowClicked.children).forEach(child => {
                 child.style.animationPlayState = 'paused';
+            });
+            marqueeRows.forEach(row => {
+                if (row !== rowClicked) {
+                    Array.from(row.children).forEach(child => {
+                        if (child.style.animationPlayState === 'paused') {
+                            child.style.animationPlayState = 'running';
+                        }
+                    });
+                }
             });
         }
     }
