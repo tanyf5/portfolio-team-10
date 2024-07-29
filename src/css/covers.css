@@ -6,11 +6,11 @@
   }
 
   .section-covers {
-    position: relative;
+    max-width: 375px;
+    margin: 0 auto;
   }
 
   .marquee-container {
-    position: absolute;
     overflow: hidden;
     width: 100%;
     backdrop-filter: blur(30px);
@@ -21,7 +21,7 @@
     height: 508px;
   }
 
-  .marquee-row, .marquee-row-reversed {
+  .marquee-row, .row-reversed {
      transform: rotate(17deg);
      display: flex;
      align-items: center;
@@ -29,7 +29,7 @@
      width: 200%;
   }
 
-  .marquee-row-reversed {
+  .row-reversed {
     flex-direction: row-reverse;
   }
 
@@ -46,7 +46,7 @@
     flex-shrink: 0;
   }
 
-  .marquee-row-reversed img {
+  .row-reversed img {
     margin-right: 20px;
     margin-bottom: 25px;
     width: 282px;
@@ -85,6 +85,10 @@
   }
 
   @media screen and (min-width: 768px) {
+    .section-covers {
+      max-width: 768px;
+    }
+
     .marquee-container {
         height: 960px;
         background-image: url(../img/covers/tablet-background.png);
@@ -95,7 +99,7 @@
         width: 544px;
         height: 314px;
     }
-    .marquee-row-reversed img {
+    .row-reversed img {
         margin-right: 40px;
         margin-bottom: 50px;
         width: 544px;
@@ -103,6 +107,10 @@
     }
   }
   @media screen and (min-width: 1440px) {
+    .section-covers {
+      max-width: 1440px;
+    }
+
     .marquee-container {
         background-image: url(../img/covers/desktop-background.png);
     }
