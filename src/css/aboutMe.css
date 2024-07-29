@@ -38,7 +38,7 @@
   font-family: 'InterTight', sans-serif;
   font-size: 24px;
   line-height: 1.17;
-  letter-spacing: -3%;
+  letter-spacing: -0.48px;
   text-align: left;
 }
 
@@ -61,10 +61,10 @@
   margin-top: 0;
 }
 
-.ac > .ac-trigger > .ac-header,
-.ac > .ac-trigger > .ac-header:hover,
-.ac > .ac-trigger > .ac-header:focus,
-.ac > .ac-trigger > .ac-header:active {
+.about-accordion > .ac > .ac-trigger > .ac-header,
+.about-accordion > .ac > .ac-trigger > .ac-header:hover,
+.about-accordion > .ac > .ac-trigger > .ac-header:focus,
+.about-accordion > .ac > .ac-trigger > .ac-header:active {
   color: #fafafa;
   opacity: 40%;
 
@@ -72,22 +72,26 @@
   border: 1px transparent solid;
 
   font-family: 'InterTight', sans-serif;
-  letter-spacing: -2%;
+  letter-spacing: -0.32px;
   font-weight: 600;
   text-transform: uppercase;
 
   margin-bottom: 12px;
   padding: 0;
+  height: 72px;
 }
 
-.ac > .ac-trigger {
-  height: 40px;
+.about-accordion > .ac > .ac-trigger,
+.about-accordion > .ac > .ac-trigger:hover,
+.about-accordion > .ac > .ac-trigger:focus,
+.about-accordion > .ac > .ac-trigger:active {
+  height: 72px;
 }
 
 .about-accordion > .ac > .ac-panel > .ac-text {
   font-weight: 500;
-  letter-spacing: -2%;
   font-family: 'InterTight', sans-serif;
+  letter-spacing: -0.32px;
 
   color: rgba(250, 250, 250, 1);
   padding: 0;
@@ -96,7 +100,7 @@
 }
 
 .about-accordion > .ac > .ac-panel > .ac-text:last-child {
-  padding-bottom: 0px;
+  padding-bottom: 20px;
 }
 
 .about-accordion > .ac > .ac-trigger {
@@ -104,6 +108,7 @@
   justify-content: space-between;
   padding: 0;
   margin-top: 40px;
+  height: 72px;
 }
 
 .about-ac-text-first {
@@ -122,7 +127,7 @@
   height: 1px;
   width: 100%;
 
-  bottom: -20px;
+  bottom: 0px;
   position: absolute;
 }
 
@@ -149,31 +154,41 @@
   height: 40px;
 }
 
-/*-----------------Slider------------*/
-/*div*/
-.about-swipe.swiper.mySwiper {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin-left: 0;
-  width: 343px;
-  height: 130px;
-
-  margin-top: 32px;
+.about-wrap-icon:hover,
+.about-wrap-icon:focus {
+  box-shadow: inset 0 10px 10px -10px rgba(250, 250, 250, 0.2),
+    inset 0 -10px 10px -10px rgba(250, 250, 250, 0.2);
 }
 
-/*ul*/
-.about-swipe > .swiper-wrapper {
-  width: 260px;
+/*-----------------Slider------------*/
+/*div*/
+.about-swiper {
+  width: 343px;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+  position: relative;
+}
+
+.about-swiper > .swiper.mySwiper {
+  /* display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; */
+  margin-left: 0;
+  width: 260px;
+  height: 130px;
+
+  /* margin-top: 32px; */
+  overflow: hidden;
 }
 
 /*li*/
-.about-swipe.swiper.mySwiper > .swiper-wrapper > .swiper-slide {
+.about-swiper > .swiper.mySwiper > .swiper-wrapper > .swiper-slide {
   box-sizing: border-box;
   width: 130px;
-  height: 130px;
+
   border: 1px rgba(250, 250, 250, 0.2) solid;
   border-radius: 50%;
 
@@ -186,35 +201,44 @@
   align-items: center;
   justify-content: center;
 }
-
-.swiper-slide-active {
+.about-swiper > .mySwiper > .swiper-wrapper > .swiper-slide-active {
   background-color: #ed3b44;
   border-style: none;
 }
 
+.swiper > .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+
 /*BTN*/
-.about-swipe > .swiper-button-next::after {
+.about-swiper > .swiper-button-next::after {
   display: none;
 }
 
-.about-swipe > .swiper-button-next {
+.about-swiper > .swiper-button-next {
   display: flex;
-  width: 86px;
+  display: flex;
+  justify-content: right;
 }
-.about-btn-next {
+
+.about-btn-next.swiper-button-next {
+  height: 28px;
+  width: 28px;
   background-color: transparent;
   border: none;
   align-items: center;
-  margin-right: 0;
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .about-btn-next > .about-svg-nav {
-  fill: #3b3b3b;
+  stroke: #3b3b3b;
   width: 28px;
   height: 28px;
+  background-color: transparent;
 }
 
 /*<----------768px--------->*/
@@ -254,11 +278,15 @@
     margin-bottom: 96px;
   }
 
-  .ac > .ac-trigger,
-  .ac > .ac-trigger:hover,
-  .ac > .ac-trigger:focus,
-  .ac > .ac-trigger:active {
-    height: 40px;
+  .about-accordion > .ac > .ac-trigger,
+  .about-accordion > .ac > .ac-trigger:hover,
+  .about-accordion > .ac > .ac-trigger:focus,
+  .about-accordion > .ac > .ac-trigger:active {
+    height: 72px;
+  }
+
+  .about-accordion > .ac > .ac-panel > .ac-text:last-child {
+    padding-bottom: 32px;
   }
 
   .about-accordion > .ac > .ac-trigger {
@@ -276,26 +304,40 @@
   /*-----------------Slider------------*/
 
   /*div*/
-  .about-swipe.swiper.mySwiper {
+
+  .about-swiper {
+    width: 704px;
+    height: 200px;
+  }
+
+  .about-swiper > .swiper.mySwiper {
     display: flex;
     flex-wrap: nowrap;
 
-    width: 704px;
+    width: 600px;
     height: 200px;
-
-    margin-top: 32px;
   }
 
   /*ul*/
   .mySwiper > .swiper-wrapper {
-    width: 600px;
     height: 100%;
   }
 
   /*li*/
   .mySwiper.swiper.about-swipe > .swiper-wrapper > .swiper-slide {
-    height: 100%;
     width: 200px;
+  }
+
+  /*btn*/
+  .about-btn-next.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+  }
+
+  .about-btn-next > .about-svg-nav {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -338,13 +380,6 @@
     max-width: 1376px;
   }
 
-  .ac > .ac-trigger,
-  .ac > .ac-trigger:hover,
-  .ac > .ac-trigger:focus,
-  .ac > .ac-trigger:active {
-    height: 40px;
-  }
-
   .about-accordion > .ac > .ac-panel > .ac-text {
     text-align: start;
     max-width: 612px;
@@ -357,7 +392,7 @@
     margin-bottom: 32px;
   }
 
-  .ac-panel {
+  .about-accordion > .ac-panel {
     margin-bottom: 40px;
   }
 
@@ -367,17 +402,7 @@
     border: none;
   }
 
-  /* .about-accordion > .ac::after {
-    content: '';
-    background-color: rgba(250, 250, 250, 0.2);
-    width: 100%;
-    height: 1px;
-    bottom: -32px;
-
-    position: absolute;
-  } */
-
-  .ac > .ac-header > .ac-trigger::after {
+  .about-accordion > .ac > .ac-header > .ac-trigger::after {
     border-radius: 50%;
     border: 1px rgba(250, 250, 250, 0.2) solid;
     width: 36px;
@@ -389,27 +414,32 @@
     content: '';
   }
 
-  .ac > .ac-header {
+  .about-accordion > .ac > .ac-header {
     height: 36px;
   }
 
   /*-----------------Slider------------*/
 
   /*div*/
+  .about-swiper {
+    width: 1312px;
+    margin: 0 auto;
+  }
 
-  .about-swipe.swiper.mySwiper {
+  .about-swiper > .swiper.mySwiper {
     display: flex;
     flex-wrap: nowrap;
 
-    width: 1400px;
+    width: 1200px;
     height: 200px;
-
-    margin-top: 32px;
   }
 
   /*ul*/
   .mySwiper > .swiper-wrapper {
     width: 1200px;
-    height: 200px;
+  }
+
+  .about-btn-next > .about-svg-nav {
+    cursor: not-allowed;
   }
 }

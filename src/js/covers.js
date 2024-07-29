@@ -1,6 +1,5 @@
-const images = document.querySelectorAll('.covers-img');
-
 document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.covers-img');
     const marqueeContainer = document.querySelector('.marquee-container');
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -15,23 +14,39 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.5 // Trigger when 50% of the element is visible
+        threshold: 0.1
     });
 
     observer.observe(marqueeContainer);
-});
 
-function stopImages(event) {
-    const row = event.target.parentElement;
-    Array.from(row.children).forEach(child => {
-        if (child.style.animationPlayState === 'paused') {
-            child.style.animationPlayState = 'running';
-        } else {
-            child.style.animationPlayState = 'paused';
+    function stopImages(event) {
+        if (event.target.nodeName !== 'IMG') {
+            return;
         }
-    });
-}
 
-images.forEach(img => {
-    img.addEventListener('click', stopImages);
+        const rowClicked = event.target.parentElement;
+
+        const marqueeRows = document.querySelectorAll('.marquee-row');
+
+        if (event.target.style.animationPlayState === 'paused') {
+            Array.from(rowClicked.children).forEach(child => {
+                child.style.animationPlayState = 'running';
+            });
+        } else {
+            Array.from(rowClicked.children).forEach(child => {
+                child.style.animationPlayState = 'paused';
+            });
+            marqueeRows.forEach(row => {
+                if (row !== rowClicked) {
+                    Array.from(row.children).forEach(child => {
+                        if (child.style.animationPlayState === 'paused') {
+                            child.style.animationPlayState = 'running';
+                        }
+                    });
+                }
+            });
+        }
+    }
+
+    document.querySelector('.marquee-container').addEventListener('click', stopImages);
 });
