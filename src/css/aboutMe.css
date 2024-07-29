@@ -272,7 +272,7 @@
   .about-accordion > .ac > .ac-trigger:hover,
   .about-accordion > .ac > .ac-trigger:focus,
   .about-accordion > .ac > .ac-trigger:active {
-    height: 40px;
+    height: 72px;
   }
   .about-accordion > .ac > .ac-panel > .ac-text:last-child {
     padding-bottom: 32px;
@@ -433,5 +433,9 @@
   /*ul*/
   .mySwiper > .swiper-wrapper {
     width: 1200px;
+  }
+
+  .about-btn-next > .about-svg-nav {
+    cursor: not-allowed;
   }
 }
