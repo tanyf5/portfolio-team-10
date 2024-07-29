@@ -10,7 +10,7 @@
   line-height: 100%;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.0025rem;
 }
 
 footer {
@@ -26,13 +26,21 @@ footer {
   overflow: hidden;
 }
 .work-together__content {
-  margin-top: 2rem;
+  margin-top: 5.5rem;
 }
 .work-together__image {
+  vertical-align: middle;
   display: inline;
   font-size: 1rem;
   width: 2.75rem;
   height: 2.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .work-together__image {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
 }
 .work-together__title {
   margin-bottom: 4rem;
@@ -144,6 +152,11 @@ input#comment {
   border: var(--border-params);
   border-radius: 60px;
   padding: 10px 12px;
+  transition: border-color 300ms;
+}
+
+.contacts__item:hover {
+  border-color: #fafafa;
 }
 
 @media screen and (min-width: 768px) {
@@ -151,6 +164,7 @@ input#comment {
     font-size: 64px;
   }
   .work-together__form {
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -172,12 +186,17 @@ input#comment {
   }
   .check__message {
     position: absolute;
-    top: 328px;
+    left: 0;
+    top: 90px;
   }
 
   .work-together__contacts {
     gap: 0.5rem;
     margin-bottom: 11.6875rem;
+  }
+
+  .contacts__item {
+    padding: 18px 32px;
   }
 }
 

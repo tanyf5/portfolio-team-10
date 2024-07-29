@@ -33,9 +33,10 @@
 }
 
 .modal-button {
+  display: inline-block;
   position: relative;
-  width: 1.375rem;
-  height: 1.375rem;
+  width: 1.5rem;
+  height: 1.5rem;
   background-color: inherit;
   border: none;
 }
@@ -61,16 +62,17 @@
 
 /* клас для svg */
 .icon__close {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  bottom: 32%;
-  left: 32%;
-  background-color: transparent;
-  border: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   stroke: #fafafa;
 }
 
 .modal__body {
-  /* width: 73.98374%; */
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,7 +81,7 @@
 
 @media screen and (min-width: 768px) {
   .modal__body {
-    width: 22.75rem;
+    width: 100%;
   }
 }
 
@@ -103,8 +105,7 @@
   margin-bottom: 1rem;
   text-transform: none;
 }
-.title {
-}
+
 .modal__text {
   font-family: var(--font-family);
   font-weight: 500;
@@ -113,6 +114,11 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(250, 250, 250, 0.6);
+  padding: 0 32px;
 }
-.text {
+
+@media screen and (min-width: 768px) {
+  .modal__text {
+    padding: 0 4rem;
+  }
 }
