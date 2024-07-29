@@ -56,6 +56,10 @@ const swiper = new Swiper(refs.swipSkill, {
       slidesPerView: 6,
     },
   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
 
 refs.btnNext.addEventListener('click', goNextSkill);
