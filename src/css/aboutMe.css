@@ -78,10 +78,14 @@
 
   margin-bottom: 12px;
   padding: 0;
+  height: 72px;
 }
 
-.about-accordion > .ac > .ac-trigger {
-  height: 40px;
+.about-accordion > .ac > .ac-trigger,
+.about-accordion > .ac > .ac-trigger:hover,
+.about-accordion > .ac > .ac-trigger:focus,
+.about-accordion > .ac > .ac-trigger:active {
+  height: 72px;
 }
 
 .about-accordion > .ac > .ac-panel > .ac-text {
@@ -274,6 +278,7 @@
   .about-accordion > .ac > .ac-trigger:active {
     height: 72px;
   }
+
   .about-accordion > .ac > .ac-panel > .ac-text:last-child {
     padding-bottom: 32px;
   }
@@ -367,13 +372,6 @@
   /* ------------------Accordion------------ */
   .about-accordion {
     max-width: 1376px;
-  }
-
-  .about-accordion > .ac > .ac-trigger,
-  .about-accordion > .ac > .ac-trigger:hover,
-  .about-accordion > .ac > .ac-trigger:focus,
-  .about-accordion > .ac > .ac-trigger:active {
-    height: 72px;
   }
 
   .about-accordion > .ac > .ac-panel > .ac-text {
