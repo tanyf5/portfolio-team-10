@@ -8,8 +8,22 @@ const modal = {
 };
 
 modal.close.addEventListener('click', () => {
-  modal.container.style.display = 'none';
+  closeModal();
 });
+
+modal.container.addEventListener('click', event => {
+  if (event.target === modal.container) closeModal();
+});
+
+document.addEventListener('keydown', event => {
+  if (event.code === 'Escape') {
+    closeModal();
+  }
+});
+
+function closeModal() {
+  modal.container.style.display = 'none';
+}
 
 function showModalResponse() {
   modal.container.style.display = 'flex';
