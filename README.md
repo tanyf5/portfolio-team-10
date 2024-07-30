@@ -30,7 +30,7 @@ Outline relevant work experience, emphasizing roles and responsibilities.
 [Oleh Lutchenko](https://github.com/LutchenkoOleh)
 
 - About me section Developer
-[Arina Patlakha](https://github.com/ArynaPatlakh)
+[Aryna Patlakha](https://github.com/ArynaPatlakh)
 
 - Benefits section Developer
 [Natali Udovik](https://github.com/Natali-Udovyk)
@@ -48,7 +48,7 @@ Outline relevant work experience, emphasizing roles and responsibilities.
 [Arsen Hruhorchyk]()
 
 - Work together section Developer
-[Ihor Mikheiev](https://github.com/ihor-mikheyev)
+[Ihor Mikheyev](https://github.com/ihor-mikheyev)
 
 
 
