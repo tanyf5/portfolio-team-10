@@ -32,7 +32,7 @@
 
 :root {
   color: #fafafa;
-  background-color: #1C1D20;
+  background-color: #1c1d20;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -77,4 +77,3 @@
     max-width: 1440px;
   }
 }
-
