@@ -15,8 +15,9 @@ refs.email.addEventListener('input', () => {
 });
 refs.form.addEventListener('submit', event => {
   // fix autoinput before a submit
-  if (!refs.email.value) {
+  if (!refs.email.value || !refs.message.value) {
     event.preventDefault();
+    return;
   }
   refs.email.classList.remove('invalid');
   refs.email.classList.remove('valid');
