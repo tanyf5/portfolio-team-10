@@ -41,10 +41,7 @@
     const toggleMenu = () => {
         const isMenuOpen = menuBtn.getAttribute('aria-expanded') === 'true';
         menuBtn.setAttribute('aria-expanded', !isMenuOpen);
-        desktopMenu.classList.toggle('is-visible');
-        setTimeout(() => {
-            desktopMenu.classList.toggle('is-open');
-        }, 10);
+        desktopMenu.classList.toggle('is-open');
     };
     
     menuBtn.addEventListener('click', (event) => {

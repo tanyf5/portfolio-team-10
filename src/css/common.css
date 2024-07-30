@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset styles */
 h1,
 h2,
