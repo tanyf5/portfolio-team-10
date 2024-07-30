@@ -2,6 +2,10 @@ import iziToast from 'izitoast';
 import { sendPost } from './api';
 import { showModalResponse } from './modal';
 
+iziToast.settings({
+  position: 'topCenter',
+});
+
 const formData = {};
 
 const refs = {
@@ -12,14 +16,18 @@ const LOCAL_KEY = 'userData';
 
 // output user data
 const savedUserData = JSON.parse(localStorage.getItem(LOCAL_KEY));
-if (savedUserData) {
-  Object.assign(formData, savedUserData);
-  refs.form.email.value = formData.email;
-  refs.form.comment.value = formData.comment;
-}
+checkLocalStorageData(savedUserData);
 
 refs.form.addEventListener('input', inputHandler);
 refs.form.addEventListener('submit', submitHandler);
+
+function checkLocalStorageData(object) {
+  if (object) {
+    Object.assign(formData, object);
+    refs.form.email.value = formData.email;
+    refs.form.comment.value = formData.comment;
+  }
+}
 
 //do save user data in the localStorage
 function inputHandler(event) {
@@ -31,17 +39,17 @@ function inputHandler(event) {
 function submitHandler(event) {
   event.preventDefault();
   if (!formData.email || !formData.comment) {
-    iziToast.show({ message: 'Please fill all places' });
+    iziToast.warning({ message: 'Please fill all places' });
     return;
   }
   sendPost(formData);
   showModalResponse();
-  localStorage.removeItem(LOCAL_KEY);
   // clear user data object after submit
   for (let key in formData) {
     formData[key] = '';
   }
   refs.form.reset();
+  localStorage.removeItem(LOCAL_KEY);
 }
 
 export { formData };

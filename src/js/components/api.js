@@ -10,7 +10,7 @@ function sendPost(object) {
       responseObject = response.data;
     })
     .catch(function (error) {
-      iziToast.error({ title: 'Error', message: error });
+      iziToast.error({ title: 'Error', message: error.status });
     });
 }
 
