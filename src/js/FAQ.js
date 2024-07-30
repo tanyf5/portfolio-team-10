@@ -4,7 +4,7 @@ import Typed from 'typed.js';
 import spriteSvg from '../img/icons.svg';
 new Accordion('.accordion-container', {
   showMultiple: true,
-  duration: 250,
+  duration: 800,
 });
 document.querySelector('.faq__list').addEventListener('click', event => {
   const triggerElement = event.target.closest('.ac-trigger');
@@ -30,7 +30,7 @@ document.querySelector('.faq__list').addEventListener('click', event => {
   if (faqItem.classList.contains('is-active')) {
     typedElement.innerHTML = '';
     const typedOptions = {
-      typeSpeed: 0,
+      typeSpeed: 1,
       startDelay: 250,
       stringsElement: stringsElement,
       showCursor: false,
