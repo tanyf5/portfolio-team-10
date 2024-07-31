@@ -21,6 +21,8 @@ footer {
 }
 
 .work-together__container.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.1) 0%,
@@ -29,8 +31,13 @@ footer {
   );
 }
 
+@media screen and (min-width: 768px) {
+  .work-together__container.container {
+    padding: 5rem 2rem 10rem;
+  }
+}
+
 .work-together__content {
-  margin-top: 5.5rem;
 }
 .work-together__image {
   vertical-align: middle;
@@ -147,7 +154,6 @@ input#comment {
   display: flex;
   gap: 0.25rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
 }
 .contacts__item {
   font-size: 0.875rem;
@@ -196,7 +202,6 @@ input#comment {
 
   .work-together__contacts {
     gap: 0.5rem;
-    margin-bottom: 11.6875rem;
   }
 
   .contacts__item {
@@ -205,9 +210,9 @@ input#comment {
 }
 
 @media screen and (min-width: 1440px) {
-  .work-together__container.container {
-    max-width: 1440px;
-    padding: 0 12.1875rem;
+  .work-together__body {
+    max-width: 65.5rem;
+    margin: 0 auto;
   }
 
   input {

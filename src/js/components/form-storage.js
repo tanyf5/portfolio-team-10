@@ -17,10 +17,6 @@ const LOCAL_KEY = 'userData';
 // output user data
 const savedUserData = JSON.parse(localStorage.getItem(LOCAL_KEY));
 checkLocalStorageData(savedUserData);
-
-refs.form.addEventListener('input', inputHandler);
-refs.form.addEventListener('submit', submitHandler);
-
 function checkLocalStorageData(object) {
   if (object) {
     Object.assign(formData, object);
@@ -29,6 +25,8 @@ function checkLocalStorageData(object) {
   }
 }
 
+refs.form.addEventListener('input', inputHandler);
+
 //do save user data in the localStorage
 function inputHandler(event) {
   formData[event.target.name] = event.target.value.trim();
@@ -36,14 +34,7 @@ function inputHandler(event) {
 }
 
 // do reset form after submit, else keeps data in the inputs
-function submitHandler(event) {
-  event.preventDefault();
-  if (!formData.email || !formData.comment) {
-    iziToast.warning({ message: 'Please fill all places' });
-    return;
-  }
-  sendPost(formData);
-  showModalResponse();
+function submitLocalStorageClear() {
   // clear user data object after submit
   for (let key in formData) {
     formData[key] = '';
@@ -52,4 +43,4 @@ function submitHandler(event) {
   localStorage.removeItem(LOCAL_KEY);
 }
 
-export { formData };
+export { formData, submitLocalStorageClear };

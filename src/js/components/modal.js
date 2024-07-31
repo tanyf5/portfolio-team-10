@@ -25,10 +25,10 @@ function closeModal() {
   modal.container.style.display = 'none';
 }
 
-function showModalResponse() {
+function showModalResponse(object) {
   modal.container.style.display = 'flex';
-  modal.title.innerHTML = responseObject.title;
-  modal.text.innerHTML = responseObject.message;
+  modal.title.innerHTML = object.title;
+  modal.text.innerHTML = object.message;
 }
 
 export { showModalResponse };
