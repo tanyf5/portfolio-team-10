@@ -173,14 +173,10 @@
 }
 
 .about-swiper > .swiper.mySwiper {
-  /* display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between; */
   margin-left: 0;
   width: 260px;
   height: 130px;
 
-  /* margin-top: 32px; */
   overflow: hidden;
 }
 
@@ -201,6 +197,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .about-swiper > .mySwiper > .swiper-wrapper > .swiper-slide-active {
   background-color: #ed3b44;
   border-style: none;
@@ -222,7 +219,6 @@
 
 .about-swiper > .swiper-button-next {
   display: flex;
-  display: flex;
   justify-content: right;
 }
 
@@ -238,7 +234,10 @@
   stroke: #3b3b3b;
   width: 28px;
   height: 28px;
-  background-color: transparent;
+}
+
+.about-btn-next > .about-svg-nav > use {
+  fill: transparent;
 }
 
 /*<----------768px--------->*/
