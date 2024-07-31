@@ -1,4 +1,5 @@
 import './components/form-validation';
+import { resetMessageSpan } from './components/form-validation';
 import './components/form-storage';
 import './components/api';
 import './components/modal';
@@ -15,7 +16,7 @@ const refs = {
   comment: document.querySelector('input[name="comment"]'),
 };
 
-refs.form.addEventListener('submit', async event => {
+refs.form.addEventListener('submit', async function (event) {
   event.preventDefault();
   if (!refs.email.value || !refs.comment.value) {
     iziToast.warning({ message: 'Please fill all places' });
@@ -23,4 +24,5 @@ refs.form.addEventListener('submit', async event => {
   }
   await sendPost(formData);
   submitLocalStorageClear();
+  resetMessageSpan();
 });

@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { showModalResponse } from './modal';
-let responseObject = {};
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 async function sendPost(object) {
@@ -14,4 +13,4 @@ async function sendPost(object) {
     });
 }
 
-export { sendPost, responseObject };
+export { sendPost };
