@@ -1,16 +1,16 @@
 import axios from 'axios';
-import iziToast from 'izitoast';
+import { showModalResponse } from './modal';
 let responseObject = {};
 
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
-function sendPost(object) {
+async function sendPost(object) {
   axios
     .post('/requests', object)
     .then(function (response) {
-      responseObject = response.data;
+      showModalResponse(response.data);
     })
     .catch(function (error) {
-      iziToast.error({ title: 'Error', message: error.status });
+      new Error(error);
     });
 }
 
