@@ -240,6 +240,15 @@
   fill: transparent;
 }
 
+@media screen and (min-width: 320px) {
+  .about-img {
+    width: 300px;
+  }
+
+  .about-presentation-bcg {
+    width: 300px;
+  }
+}
 /*<----------768px--------->*/
 
 @media screen and (min-width: 768px) {
