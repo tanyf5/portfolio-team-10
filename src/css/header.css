@@ -226,11 +226,12 @@
     /*   Menu   */
 
     .desktop-menu {
+        position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: transparent;
-        top: 100%;
+        top: 79px;
         left: 0;
         right: 0;
         visibility: hidden;

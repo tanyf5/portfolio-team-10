@@ -45,7 +45,7 @@ Outline relevant work experience, emphasizing roles and responsibilities.
 [Tetiana Shevchenko](https://github.com/tatilunarsnail)
 
 - Reviews section Developer
-[Arsen Hruhorchyk]()
+[Oleh Lutchenko](https://github.com/LutchenkoOleh) and [Tetiana Bondarchuk](https://github.com/tanyf5)
 
 - Work together section Developer
 [Ihor Mikheyev](https://github.com/ihor-mikheyev)
