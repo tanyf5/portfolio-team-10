@@ -1,20 +1,15 @@
-.hero {
-
-  height: auto;
+.section-hero {
   background: url('../img/header-hero/background-img.webp'), rgb(28, 29, 32);
   background-size: 80% 100%, 20% 100%;
   background-repeat: no-repeat;
   background-position: left, right;
-  display: flex;
-
+  width: 100%;
 }
-
-.hero-wrap {}
 
 
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-  .hero {
+  .section-hero {
     background-image: url('../img/header-hero/background-img-2x.webp');
   }
 }
@@ -22,15 +17,14 @@
 .hero-title {
   font-family: 'InterTight', sans-serif;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 49px;
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
   margin-top: 281px;
-  width: 343px;
+  width: 100%;
   margin-bottom: 0;
-
 }
 
 
@@ -47,7 +41,7 @@
   height: auto;
   cursor: pointer;
   margin-top: 212px;
-  width: 342px;
+  width: 100%;
   margin-bottom: 32px;
 }
 
@@ -85,11 +79,13 @@
 
 
 
-@media screen and (min-width:768px) {
-  .hero {
-    background-size: 75% 100%, 25% 100%;
-  }
 
+
+@media screen and (min-width:768px) {
+
+  .section-hero {
+    background-size: 67% 100%, 33% 100%;
+  }
 
   .hero-title {
     font-size: 90px;
@@ -123,9 +119,10 @@
 }
 
 @media screen and (min-width:1440px) {
-  .hero {
-    background-size: 50% 100%, 50% 100%;
+  .section-hero {
+    background-size: 53% 100%, 47% 100%;
   }
+
 
   .hero-title {
     margin-left: 146px;
