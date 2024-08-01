@@ -240,13 +240,17 @@
   fill: transparent;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width : 360px)  {
   .about-img {
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
   }
 
   .about-presentation-bcg {
     width: 300px;
+    margin-left: auto;
+      margin-right: auto;
   }
 }
 /*<----------768px--------->*/
