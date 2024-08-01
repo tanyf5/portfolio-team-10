@@ -1,5 +1,3 @@
-import { responseObject } from './api';
-
 const modal = {
   container: document.querySelector('#modal'),
   close: document.querySelector('.modal-button'),

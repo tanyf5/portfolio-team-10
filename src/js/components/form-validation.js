@@ -6,23 +6,23 @@ const refs = {
 
 refs.email.addEventListener('input', () => {
   if (refs.email.validity.valid) {
-    refs.email.classList.add('valid');
-    refs.message.style.color = '#3cbc81';
-    refs.message.textContent = ' Success!';
+    showSuccess();
   } else {
     showError();
   }
 });
-refs.form.addEventListener('submit', event => {
-  // fix autoinput before a submit
-  if (!refs.email.value || !refs.message.value) {
-    event.preventDefault();
-    return;
-  }
+
+function resetMessageSpan() {
   refs.email.classList.remove('invalid');
   refs.email.classList.remove('valid');
   refs.message.textContent = '';
-});
+}
+
+function showSuccess() {
+  refs.email.classList.add('valid');
+  refs.message.style.color = '#3cbc81';
+  refs.message.textContent = ' Success!';
+}
 
 function showError() {
   if (!refs.email.validity.valid) {
@@ -31,3 +31,5 @@ function showError() {
     refs.message.textContent = 'Invalid email, try again';
   }
 }
+
+export { resetMessageSpan };
