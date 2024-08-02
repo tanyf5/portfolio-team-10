@@ -462,8 +462,4 @@
   .mySwiper > .swiper-wrapper {
     width: 1200px;
   }
-
-  .about-btn-next > .about-svg-nav {
-    cursor: not-allowed;
-  }
 }
