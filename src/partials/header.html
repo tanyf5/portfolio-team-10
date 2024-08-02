@@ -1,69 +1,92 @@
 <header class="header" id="header">
-    <div class="header-container">
-        <div class="header-elements">
-            <a class="header-logo" href="index.html" tabindex="0" aria-label="Homepage">
-                <img src="./img/header-hero/logo.png" alt="logo" loading="lazy">
-                <p class="jefferson">jefferson*</p>
-            </a>
-            <button class="menu-btn js-open-desktop-menu" tabindex="0" aria-controls="desktop-menu" aria-expanded="false" aria-label="Open menu">Menu</button> 
-            <a href="#footer" class="hdr-order-btn" tabindex="0" aria-label="Order the project">Order the project</a>
-            <button class="burger-btn js-open-mobile-menu">
-                    <svg class="burger-btn-svg" width="28" height="28">
-                        <use href="./img/icons.svg#icon-burger"></use>
-                    </svg>
-            </button>
-        </div>
+  <div class="header-container">
+    <div class="header-elements">
+      <a
+        class="header-logo"
+        href="index.html"
+        tabindex="0"
+        aria-label="Homepage"
+      >
+        <img src="./img/header-hero/logo.png" alt="logo" loading="lazy" />
+        <p class="jefferson">jefferson*</p>
+      </a>
+      <button
+        class="menu-btn js-open-desktop-menu"
+        tabindex="0"
+        aria-controls="desktop-menu"
+        aria-expanded="false"
+        aria-label="Open menu"
+      >
+        Menu
+      </button>
+      <a
+        href="#footer"
+        class="hdr-order-btn"
+        tabindex="0"
+        aria-label="Order the project"
+        >Order the project</a
+      >
+      <button class="burger-btn js-open-mobile-menu">
+        <svg class="burger-btn-svg" width="28" height="28">
+          <use href="./img/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+
+  <div class="mobile-menu js-menu-container">
+    <div class="open-mob-menu">
+      <button
+        class="menu-btn-close js-close-mobile-menu"
+        type="button"
+        aria-label="Close menu button"
+      >
+        <svg class="menu-btn-close" width="28" height="28">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
 
-    <!-- Mobile menu -->
+    <nav>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#about-me">About me</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#projects">Projects</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
 
-    <div class="mobile-menu js-menu-container">
-        <div class="open-mob-menu">
-            <button class="menu-btn-close js-close-mobile-menu" type="button" aria-label="Close menu button">
-                <svg class="menu-btn-close"  width="28" height="28">
-                    <use href="./img/icons.svg#icon-close"></use>
-                </svg>
-            </button>
-        </div>
+    <a href="#footer" class="order-btn-menu">Order the project</a>
+  </div>
 
-        <nav>
-            <ul class="mobile-menu-list">
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#about-me">About me</a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#benefits">Benefits</a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#projects">Projects</a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#faq">FAQ</a>
-              </li>
-            </ul>
-          </nav>
+  <!-- Desktop and tablet menu -->
 
-          <a href="#footer" class="order-btn-menu">Order the project</a>
-    </div>
-
-<!-- Desktop and tablet menu -->
-
-    <div class="desktop-menu js-desktop-menu">
-        <nav>
-            <ul class="desktop-menu-list">
-              <li class="desktop-menu-item">
-                <a class="desktop-menu-link" href="#about-me">About me</a>
-              </li>
-              <li class="desktop-menu-item">
-                <a class="desktop-menu-link" href="#benefits">Benefits</a>
-              </li>
-              <li class="desktop-menu-item">
-                <a class="desktop-menu-link" href="#projects">Projects</a>
-              </li>
-              <li class="desktop-menu-item">
-                <a class="desktop-menu-link" href="#faq">FAQ</a>
-              </li>
-            </ul>
-          </nav>
-    </div>
+  <div class="desktop-menu js-desktop-menu">
+    <nav>
+      <ul class="desktop-menu-list">
+        <li class="desktop-menu-item">
+          <a class="desktop-menu-link" href="#about-me">About me</a>
+        </li>
+        <li class="desktop-menu-item">
+          <a class="desktop-menu-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="desktop-menu-item">
+          <a class="desktop-menu-link" href="#projects">Projects</a>
+        </li>
+        <li class="desktop-menu-item">
+          <a class="desktop-menu-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
