@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/portfolio-team-10/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio-team-10/assets/vendor-078316ac.js">
     <link rel="stylesheet" href="/portfolio-team-10/assets/vendor-c36716e1.css">
-    <link rel="stylesheet" href="/portfolio-team-10/assets/index-23c9298c.css">
+    <link rel="stylesheet" href="/portfolio-team-10/assets/index-903ab606.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -90,7 +90,7 @@
 
   <!-- Desktop and tablet menu -->
 
-  <div class="desktop-menu js-desktop-menu">
+  <div class="desktop-menu js-desktop-menu" id="desktop-menu">
     <nav>
       <ul class="desktop-menu-list">
         <li class="desktop-menu-item">
@@ -310,9 +310,17 @@
         </div>
       </li>
     </ul>
-    <a href="#footer">
-      <button type="button" class="benefits-order">Order the project</button>
-    </a>
+
+    <!-- <button id="footer" type="button" class="benefits-order">
+      Order the project
+    </button> -->
+    <a
+      href="#footer"
+      class="benefits-order"
+      tabindex="0"
+      aria-label="Order the project"
+      >Order the project</a
+    >
   </div>
 </section>
 
