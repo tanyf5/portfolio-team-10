@@ -240,7 +240,7 @@
   fill: transparent;
 }
 
-@media screen and (min-width: 320px) and (max-width : 360px)  {
+@media screen and (min-width: 320px) and (max-width: 360px) {
   .about-img {
     margin-left: auto;
     margin-right: auto;
@@ -250,7 +250,19 @@
   .about-presentation-bcg {
     width: 300px;
     margin-left: auto;
-      margin-right: auto;
+    margin-right: auto;
+  }
+
+  .about-swiper > .swiper.mySwiper {
+    margin-left: 0;
+    width: 260px;
+    height: 130px;
+
+    overflow: hidden;
+  }
+
+  .about-swiper {
+    width: 316px;
   }
 }
 /*<----------768px--------->*/
