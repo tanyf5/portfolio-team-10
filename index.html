@@ -18,74 +18,98 @@
   </head>
   <body>
     <header class="header" id="header">
-    <div class="header-container">
-        <div class="header-elements">
-            <a class="header-logo" href="index.html" tabindex="0" aria-label="Homepage">
-                <img src="/portfolio-team-10/assets/logo-9ca39f67.png" alt="logo" loading="lazy">
-                <p class="jefferson">jefferson*</p>
-            </a>
-            <button class="menu-btn js-open-desktop-menu" tabindex="0" aria-controls="desktop-menu" aria-expanded="false" aria-label="Open menu">Menu</button> 
-            <a href="#footer" class="hdr-order-btn" tabindex="0" aria-label="Order the project">Order the project</a>
-            <button class="burger-btn js-open-mobile-menu">
-                    <svg class="burger-btn-svg" width="28" height="28">
-                        <use href="/portfolio-team-10/assets/icons-c732da97.svg#icon-burger"></use>
-                    </svg>
-            </button>
-        </div>
+  <div class="header-container">
+    <div class="header-elements">
+      <a
+        class="header-logo"
+        href="index.html"
+        tabindex="0"
+        aria-label="Homepage"
+      >
+        <img src="/portfolio-team-10/assets/logo-9ca39f67.png" alt="logo" loading="lazy" />
+        <p class="jefferson">jefferson*</p>
+      </a>
+      <button
+        class="menu-btn js-open-desktop-menu"
+        tabindex="0"
+        aria-controls="desktop-menu"
+        aria-expanded="false"
+        aria-label="Open menu"
+      >
+        Menu
+      </button>
+      <a
+        href="#footer"
+        class="hdr-order-btn"
+        tabindex="0"
+        aria-label="Order the project"
+        >Order the project</a
+      >
+      <button class="burger-btn js-open-mobile-menu">
+        <svg class="burger-btn-svg" width="28" height="28">
+          <use href="/portfolio-team-10/assets/icons-c732da97.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+
+  <div class="mobile-menu js-menu-container">
+    <div class="open-mob-menu">
+      <button
+        class="menu-btn-close js-close-mobile-menu"
+        type="button"
+        aria-label="Close menu button"
+      >
+        <svg class="menu-btn-close" width="28" height="28">
+          <use href="/portfolio-team-10/assets/icons-c732da97.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
 
-    <!-- Mobile menu -->
+    <nav>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#about-me">About me</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#projects">Projects</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
 
-    <div class="mobile-menu js-menu-container">
-        <div class="open-mob-menu">
-            <button class="menu-btn-close js-close-mobile-menu" type="button" aria-label="Close menu button">
-                <svg class="menu-btn-close"  width="28" height="28">
-                    <use href="/portfolio-team-10/assets/icons-c732da97.svg#icon-close"></use>
-                </svg>
-            </button>
-        </div>
+    <a href="#footer" class="order-btn-menu">Order the project</a>
+  </div>
 
-        <nav>
-            <ul class="mobile-menu-list">
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#about-me">About me</a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#benefits">Benefits</a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#projects">Projects</a>
-              </li>
-              <li class="mobile-menu-item">
-                <a class="mobile-menu-link" href="#faq">FAQ</a>
-              </li>
-            </ul>
-          </nav>
+  <!-- Desktop and tablet menu -->
 
-          <a href="#footer" class="order-btn-menu">Order the project</a>
-    </div>
-
-<!-- Desktop and tablet menu -->
-
-    <div class="desktop-menu js-desktop-menu">
-        <nav>
-            <ul class="desktop-menu-list">
-              <li class="desktop-menu-item">
-                <a class="desktop-menu-link" href="#about-me">About me</a>
-              </li>
-              <li class="desktop-menu-item">
-                <a class="desktop-menu-link" href="#benefits">Benefits</a>
-              </li>
-              <li class="desktop-menu-item">
-                <a class="desktop-menu-link" href="#projects">Projects</a>
-              </li>
-              <li class="desktop-menu-item">
-                <a class="desktop-menu-link" href="#faq">FAQ</a>
-              </li>
-            </ul>
-          </nav>
-    </div>
+  <div class="desktop-menu js-desktop-menu">
+    <nav>
+      <ul class="desktop-menu-list">
+        <li class="desktop-menu-item">
+          <a class="desktop-menu-link" href="#about-me">About me</a>
+        </li>
+        <li class="desktop-menu-item">
+          <a class="desktop-menu-link" href="#benefits">Benefits</a>
+        </li>
+        <li class="desktop-menu-item">
+          <a class="desktop-menu-link" href="#projects">Projects</a>
+        </li>
+        <li class="desktop-menu-item">
+          <a class="desktop-menu-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
     <main>
       <section class="section-hero" id="hero">
   <div class="hero container">
@@ -111,14 +135,12 @@
     <picture>
       <source
         media="(min-width: 768px)"
-        width="704"
-        height="700"
+       
         srcset="/portfolio-team-10/assets/portrait-img-0f06bef9.webp 1x, /portfolio-team-10/assets/portrait-img-2x-e0228029.webp 2x"
       />
       <source
         media="(max-width: 767px)"
-        width="680"
-        height="700"
+     
         srcset="/portfolio-team-10/assets/portrait-img-0f06bef9.webp 1x, /portfolio-team-10/assets/portrait-img-2x-e0228029.webp 2x"
       />
       <img
@@ -228,57 +250,72 @@
 </section>
 
       <section class="benefits" id="benefits">
-    <div class="container benefits-container">
-        <h2 class="benefits-title">Benefits of working with me</h2>
-        <ul class="benefits-list">
-            <li class="benefits-item">
-                <div class="icon-background">
-                    <svg class="benefits-icon" width="24" height="24">
-                        <use href="/portfolio-team-10/assets/symbol-defs-1ba512b7.svg#icon-user-01" ></use>
-                        </svg>
-                </div>
-                    <div class="benefits-info">
-                    <h3 class="title-item">Expertise</h3>
-                    <p class="benefits-text">As a highly experienced developer, I have deep knowledge of programming and website development.</p>
-                </div>
-            </li>
-            <li class="benefits-item">
-                <div class="icon-background">
-                    <svg class="benefits-icon" width="24" height="24">
-                    <use href="/portfolio-team-10/assets/symbol-defs-1ba512b7.svg#icon-message-chat-circle"></use>
-                    </svg>
-                </div>
-                <div class="benefits-info">
-                        <h3 class="title-item">Communication</h3>
-                    <p class="benefits-text"> Understanding your needs and wants is my priority and I am always open to discussions and corrections.</p>
-                    </div>
-            </li>
-            <li class="benefits-item">
-                <div class="icon-background">
-                <svg class="benefits-icon" width="24" height="24">
-                    <use href="/portfolio-team-10/assets/symbol-defs-1ba512b7.svg#icon-brush-01"></use>
-                    </svg>
-                </div>
-                <div class="benefits-info">
-                    <h3 class="title-item">Art</h3>
-                    <p class="benefits-text">Thanks to my creative nature, I am ready to accept challenges and help you bring your ideas to life.</p>
-                    </div>
-            </li>
-            <li class="benefits-item">
-                <div class="icon-background">
-                    <svg class="benefits-icon" width="24" height="24">
-                    <use href="/portfolio-team-10/assets/symbol-defs-1ba512b7.svg#icon-hourglass-02"></use>
-                    </svg>
-                </div>
-                <div class="benefits-info">
-                    <h3 class="title-item">Urgent execution</h3>
-                    <p class="benefits-text">I understand how important time is to you. Ready to work quickly and efficiently, without reducing the quality of work.</p>
-                    </div>
-            </li>
-        </ul>
-        <button type="button" class="benefits-order"><a href="#footer">Order the project</a></button>
-    </div>
+  <div class="container benefits-container">
+    <h2 class="benefits-title">Benefits of working with me</h2>
+    <ul class="benefits-list">
+      <li class="benefits-item">
+        <div class="icon-background">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/portfolio-team-10/assets/symbol-defs-1ba512b7.svg#icon-user-01"></use>
+          </svg>
+        </div>
+        <div class="benefits-info">
+          <h3 class="title-item">Expertise</h3>
+          <p class="benefits-text">
+            As a highly experienced developer, I have deep knowledge of
+            programming and website development.
+          </p>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <div class="icon-background">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/portfolio-team-10/assets/symbol-defs-1ba512b7.svg#icon-message-chat-circle"></use>
+          </svg>
+        </div>
+        <div class="benefits-info">
+          <h3 class="title-item">Communication</h3>
+          <p class="benefits-text">
+            Understanding your needs and wants is my priority and I am always
+            open to discussions and corrections.
+          </p>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <div class="icon-background">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/portfolio-team-10/assets/symbol-defs-1ba512b7.svg#icon-brush-01"></use>
+          </svg>
+        </div>
+        <div class="benefits-info">
+          <h3 class="title-item">Art</h3>
+          <p class="benefits-text">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </div>
+      </li>
+      <li class="benefits-item">
+        <div class="icon-background">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="/portfolio-team-10/assets/symbol-defs-1ba512b7.svg#icon-hourglass-02"></use>
+          </svg>
+        </div>
+        <div class="benefits-info">
+          <h3 class="title-item">Urgent execution</h3>
+          <p class="benefits-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <a href="#footer">
+      <button type="button" class="benefits-order">Order the project</button>
+    </a>
+  </div>
 </section>
+
       <section id="projects" class="container">
   <div class="page-projects">
     <h2 class="projects-title">Project</h2>
@@ -318,14 +355,12 @@
                 <picture>
                   <source
                     media="(min-width: 768px)"
-                    width="614"
-                    height="385"
+                
                     srcset="/portfolio-team-10/assets/photo-95f5bc24.webp 1x, /portfolio-team-10/assets/photo@2x-8a763505.webp 2x"
                   />
                   <source
                     media="(max-width: 767px)"
-                    width="311"
-                    height="195"
+                    
                     srcset="/portfolio-team-10/assets/photo-95f5bc24.webp 1x, /portfolio-team-10/assets/photo@2x-8a763505.webp 2x"
                   />
                   <img
@@ -369,14 +404,12 @@
                 <picture>
                   <source
                     srcset="/portfolio-team-10/assets/project-2-tablet-348fcea9.webp 1x, /portfolio-team-10/assets/project-2-tablet@2x-5e1e5dac.webp 2x"
-                    width="614"
-                    height="385"
+                  
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="/portfolio-team-10/assets/project-2-mobile-cd89d146.webp 1x, /portfolio-team-10/assets/project-2-mobile@2x-0214638b.webp 2x"
-                    width="311"
-                    height="195"
+                
                     media="(max-width: 767px)"
                   />
                   <img
@@ -420,14 +453,12 @@
                 <picture>
                   <source
                     srcset="/portfolio-team-10/assets/project-3-tablet-429fbc47.webp 1x, /portfolio-team-10/assets/project-3-tablet@2x-8e0ccbd1.webp 2x"
-                    width="614"
-                    height="385"
+                
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="data:image/webp;base64,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 1x, /portfolio-team-10/assets/project-3-mobile@2x-eef4cc69.webp 2x"
-                    width="311"
-                    height="195"
+               
                     media="(max-width: 767px)"
                   />
                   <img
