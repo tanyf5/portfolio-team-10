@@ -3,7 +3,6 @@ import iziToast from "izitoast";
 
 const reviewsList = document.querySelector('.reviews-list')
 const URL = `https://portfolio-js.b.goit.study/api/reviews`
-console.log(URL)
 
 
 function createMarkup(_id, author, avatar_url, review) {
@@ -32,7 +31,6 @@ fetch(URL)
     return response.json();
   })
   .then(reviews => {
-    console.log('Отримані відгуки:', reviews);
     if (reviewsList) {
       reviews.map(({ _id, author, avatar_url, review }) => { createMarkup(_id, author, avatar_url, review) });
     }
