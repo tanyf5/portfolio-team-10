@@ -46,6 +46,9 @@ const swiper = new Swiper(refs.swipSkill, {
   loop: true,
   watchOverflow: false,
   breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
     375: {
       slidesPerView: 2,
     },
